@@ -160,81 +160,102 @@ header{
     margin-top: 20%;
     margin-left: 20%;
 }
-.contPort{
+/*inicio de portfolio*/
+.cont_portfolio{
     height: auto;
     width: 100%;
-    background-color: rgb(220, 220, 194)
-}
-
-.souls{
-    height: 400px;
-    margin-top: 5%;
-    margin-left: 10%;
-}
-
-.joan{
-    height: 400px;
-    margin-top: 5%;
-}
-
-.scott{
-    height: 400px;
-    margin-top: 5%;
-}
-
-.ulises{
-    height: 400px;
-    margin-top: 5%;
-}
-
-.megan{
-    height: 400px;
-    margin-left: 10%;
-}
-
-.andrea{
-    width: 450px;
-    
-}
-
-.heitor{
-    height: 400px;
-    
-}
-
-.rizky{
-    height: 400px;
-    margin-left: 10%;
-}
-
-.lamont{
-    height: 400px;
-}
-
-.flavio{
-    width: 400px;
-
-}
-
-.lehandross{
-    height: 400px;
-    margin-left: 10%;
-}
-
-.ali{
-    height: 400px;
-}
-
-.marcelo{
-    height: 400px;
-}
-
-.cont_form{
     background-color: rgb(220, 220, 194);
-    display: flex;
-
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(5, 250px);
+    grid-template-areas: 
+    "item1 item2 item2 item3"
+    "item4 item4 item5 item3"
+    "item6 item7 item5 item8"
+    "item6 item10 item10 item8"
+    "item9 item9 item12 item11"
+    ;
+    grid-gap: 5px;
 }
 
+.item{
+    background-image: url(images/pexels-ali-pazani-3374436.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.item1{
+    grid-area: item1;
+    background-image: url(images/pexels-sasha-kim-8484060.jpg);
+    background-position: top;
+}
+
+.item2{
+    grid-area: item2;
+    background-image: url(images/pexels-flávio-santos-4665731.jpg);
+    background-position: top;
+}
+
+.item3{
+    grid-area: item3;
+    background-image: url(images/pexels-ali-pazani-3374436.jpg);
+}
+
+.item4{
+    grid-area: item4;
+    background-image: url(images/pexels-andrea-piacquadio-3812723.jpg);
+    background-position: center;
+    
+}
+
+.item5{
+    grid-area: item5;
+    background-image: url(images/pexels-ulises-peña-12281201\ \(1\).jpg);
+}
+
+.item6{ 
+    grid-area: item6;
+    background-image: url(images/pexels-scott-foltz-12162376.jpg);
+}
+
+.item7{
+    grid-area: item7;
+    background-image: url(images/pexels-heitor-verdi-2529459.jpg);
+}
+
+.item8{
+    grid-area: item8;
+    background-image: url(images/pexels-cxpturing-souls-3014808.jpg);
+    background-position: top;
+}
+
+.item9{
+    grid-area: item9;
+    background-image: url(images/pexels-sasha-kim-8484058.jpg);
+}
+
+.item10{
+    grid-area: item10;
+    background-image: url(images/pexels-brenda-lelis-2899746.jpg);
+}
+
+.item11{
+    grid-area: item11;
+    background-image: url(images/pexels-daniel-duarte-13005188.jpg);
+    background-position: top;
+}
+
+.item12{
+    grid-area: item12;
+    background-image: url(images/pexels-marcelo-chagas-3335352.jpg);
+    background-position: top;
+}
+
+/*fin de portfolio */
 .form_left{
     height: auto;
     width: 50%;
