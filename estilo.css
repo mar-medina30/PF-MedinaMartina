@@ -10,60 +10,55 @@
     font-family: 'Cormorant Garamond', serif;
 }
 /*inicio de header*/
-header{
+.navbar{
     background-color:  rgb(237, 237, 202);
-    width: 100%;
-    height: 80px;
-    border: 1px solid black;;
+
 }
 
 .logo{
-    float: left;
-    color: rgb(0, 0, 0);
-    background-color:  rgb(237, 237, 202);
-    font-weight: bold;
+    color: black;
     font-size: 25px;
-    margin: 25px;    
+    font-weight: bolder;
+    padding: 10px;
 }
 
-.barra{
-    float: right;
-}
-
-.barra li{
-    list-style: none;
-    display: inline-block;
-    padding: 15px;
-    margin: 10px;
-}
-
-.barra a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+.nav-link{
+    color: black !important;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bold;   
+    width: 150px;
+    text-align: center;
 }
 
-.barra a:hover{
-    color: rgb(155, 155, 152);
-}
 
-.barra li:hover{
+.nav-link:hover{
     transform: scale(1.09);
     transition: all .9s;
 }
 
-.sec{ 
-    color: rgb(132, 131, 131);
-    background-color:  rgb(237, 237, 202);
-    text-transform: uppercase;
-    height: 40px;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0;
-    border: 1px solid rgb(0, 0, 0);
+
+.navbar-nav li{
+    margin: auto;
+    margin-left: 5%;
+   
 }
+
+
+.navbar-toggler i{ 
+    color:black;
+    border: none;
+    
+}
+
 /*fin de header*/
+
+.sec{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid black;
+}
 
 /*inicio de inicio*/
 .cont_inicio{
@@ -95,7 +90,7 @@ header{
     padding: 40px;
     border: 5px solid rgb(200, 200, 178);
     margin: auto;
-    margin-top: 120px;
+    margin-top: 8%;
     background-color: rgb(220, 220, 194);
 }
 
@@ -161,7 +156,7 @@ header{
 .cont_mifoto img{
     height: 400px;
     width: auto;
-    margin-top: 20%;
+    margin-top: 35%;
     margin-left: 20%;
 }
 /*fin de sobre mí*/
@@ -298,7 +293,7 @@ header{
 
 .form_right{
     height: auto;
-    width: 50%;
+    width: 60%;
     background-color: rgb(220, 220, 194);
 }
 
@@ -306,7 +301,7 @@ header{
     display: block;
     color: black;
     font-size: 20px;
-    padding: 35px;
+    padding: 40px;
     margin: auto;
     margin-top: 16px;
     border: 5px double rgb(191, 191, 162);
@@ -327,6 +322,9 @@ input::placeholder {
     color: rgb(123, 121, 121);
     font-size: 20px;
 }
+textarea{
+    max-height: 100px;
+}
 
 textarea::placeholder { 
     font-family: 'Josefin Slab', serif;
@@ -335,6 +333,8 @@ textarea::placeholder {
 }
 
 button{
+    font-size: 15px;
+    font-family: 'Josefin Slab', serif;
     background-color: rgb(205, 201, 201);
     padding: 5px;
     border: 2px solid rgb(167, 165, 165);
@@ -353,6 +353,7 @@ button:hover{
     color: rgb(92, 92, 92);
     font-family: 'Josefin Slab', serif;
     font-size: 30px;
+    font-weight: bolder;
     background-color: rgb(220, 220, 194);
     padding: 30px;
     border: 3px double rgb(0, 0, 0);
@@ -400,6 +401,7 @@ button:hover{
     color: rgb(92, 92, 92);
     font-family: 'Josefin Slab', serif;
     font-size: 25px;
+    font-weight: bold;
     padding: 20px;
 }
 
