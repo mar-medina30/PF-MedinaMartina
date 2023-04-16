@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Josefin+Slab&family=Sono:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  rgb(237, 237, 202);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header{
+    background-color:  rgb(237, 237, 202);
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;;
+}
+
+.logo{
+    float: left;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px;    
+}
+
+.barra{
+    float: right;
+}
+
+.barra li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+}
+
+.barra a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.barra a:hover{
+    color: rgb(155, 155, 152);
+}
+
+.barra li:hover{
+    transform: scale(1.09);
+    transition: all .9s;
+}
+
+.sec{ 
+    color: rgb(132, 131, 131);
+    background-color: rgb(220, 220, 186);
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+.cont_inicio{
+        height: auto;
+        width: 100%;  
+        display: flex;
+}
+
+.left{
+    background-image: url(images/fotocamara.png);
+    height: 100vh;
+    width: 50%;
+    background-size: cover;
+    background-position: right;
+    opacity: .6;
+    
+    
+}
+
+.right{
+    height: auto;
+    width: 50%;
+    background-color: rgb(220, 220, 194);
+    
+}
+
+.call {
+    max-width: 70%;
+    padding: 40px;
+    border: 5px solid rgb(200, 200, 178);
+    margin: auto;
+    margin-top: 120px;
+    background-color: rgb(220, 220, 194);
+}
+
+.call, .hola{
+    color: rgb(92, 92, 92);
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: rgb(220, 220, 194);
+
+}
+
+.call p{
+    color: rgb(92, 92, 92);
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(220, 220, 194);
+    }
+
+.cont{
+    height: auto;
+    width: 100%;
+    background-color:  rgb(220, 220, 194);
+    }
+
+.cont_sobremi{
+    display: flex;
+    background-color:  rgb(220, 220, 194);
+}
+
+.cont_info{
+    width: 40%;
+    background-color:  rgb(220, 220, 194);
+    border: 4px solid rgb(195, 195, 175);
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cont_info p{
+    width: 100%;
+    color: rgb(92, 92, 92);
+    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    background-color:  rgb(220, 220, 194);
+    font-size: 25px;
+    padding: 60px;
+    
+}
+
+.cont_mifoto{
+    height: 100vh;
+    width: 50%;
+    background-color:  rgb(220, 220, 194);
+}
+
+.cont_mifoto img{
+    height: 400px;
+    width: auto;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.contPort{
+    height: auto;
+    width: 100%;
+    background-color: rgb(220, 220, 194)
+}
+
+.souls{
+    height: 400px;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.joan{
+    height: 400px;
+    margin-top: 5%;
+}
+
+.scott{
+    height: 400px;
+    margin-top: 5%;
+}
+
+.ulises{
+    height: 400px;
+    margin-top: 5%;
+}
+
+.megan{
+    height: 400px;
+    margin-left: 10%;
+}
+
+.andrea{
+    width: 450px;
+    
+}
+
+.heitor{
+    height: 400px;
+    
+}
+
+.rizky{
+    height: 400px;
+    margin-left: 10%;
+}
+
+.lamont{
+    height: 400px;
+}
+
+.flavio{
+    width: 400px;
+
+}
+
+.lehandross{
+    height: 400px;
+    margin-left: 10%;
+}
+
+.ali{
+    height: 400px;
+}
+
+.marcelo{
+    height: 400px;
+}
+
+.cont_form{
+    background-color: rgb(220, 220, 194);
+    display: flex;
+
+}
+
+.form_left{
+    height: auto;
+    width: 50%;
+    background-color: rgb(220, 220, 194);
+}
+
+.cajacontacto{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(220, 220, 194);
+    font-size: 25px;
+    width: 80%;
+    height: auto;
+    padding: 40px;
+    margin: auto;
+    margin-top: 125px;
+}
+
+
+
+.cajacontacto p{
+    color: rgb(92, 92, 92);
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    background-color: rgb(220, 220, 194);
+    border: solid 3px rgb(191, 191, 162);
+    padding: 30px;
+}
+
+.form_right{
+    height: auto;
+    width: 50%;
+    background-color: rgb(220, 220, 194);
+}
+
+.formulario{
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 35px;
+    margin: auto;
+    margin-top: 16px;
+    border: 5px double rgb(191, 191, 162);
+    width: 60%;
+    height: 95%;
+}
+
+
+input {
+    padding: 6px;
+    width: 100%;}
+
+input::placeholder { color: rgb(123, 121, 121);}
+
+button{
+    background-color: rgb(205, 201, 201);
+    padding: 5px;
+    border: 2px solid rgb(167, 165, 165);
+    margin-left: 80%;
+}
+
+button:hover{
+    background-color: rgb(172, 172, 172);;
+}
+
+.cont h2{
+    text-align: center;
+    display: inline-block;
+    color: rgb(92, 92, 92);
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    background-color:  rgb(220, 220, 194);
+    padding: 30px;
+    border: 3px double rgb(0, 0, 0);
+    margin-left: 28%;
+    margin-top: 5%;
+    
+}
+
+.cajas{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(92, 92, 92);
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 50px;
+    background-color:  rgb(220, 220, 194);
+    margin-top: 5%;
+    
+    
+}
+
+.caja1, .caja2, .caja3{ 
+    width: 20%;
+    padding: 30px;
+    border: 3px solid rgb(195, 195, 175);
+}
+
+.caja1:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;
+    box-shadow: 0 0 10px rgb(104, 102, 102);
+}
+
+.caja2:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;
+    box-shadow: 0 0 10px rgb(104, 102, 102);
+}
+
+.caja3:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;
+    box-shadow: 0 0 10px rgb(104, 102, 102);
+}
+
+.cajas h3{
+    color: rgb(92, 92, 92);
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    padding: 25px;
+}
+
+.cajas i{
+    color: rgb(92, 92, 92);
+    background-color: beige;
+    
+}
+
+footer{
+    background-color: rgb(237, 237, 202);
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(220, 220, 194);
+
+}
+
+.redes i{
+    color: rgb(9, 9, 9);
+    letter-spacing: 20px;
+}
+
+.redes i:hover{
+    color: rgb(154, 150, 150);
+    transform: scale(1.09);
+    transition: all 0.9s;
+}
