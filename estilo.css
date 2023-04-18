@@ -12,7 +12,8 @@
 /*inicio de header*/
 .navbar{
     background-color:  rgb(237, 237, 202);
-
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .logo{
@@ -22,11 +23,18 @@
     padding: 10px;
 }
 
+
+
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+
 .nav-link{
     color: black !important;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;   
-    width: 150px;
+    width: 100px;
     text-align: center;
 }
 
@@ -43,11 +51,9 @@
    
 }
 
-
 .navbar-toggler i{ 
     color:black;
     border: none;
-    
 }
 
 /*fin de header*/
@@ -64,17 +70,17 @@
 .cont_inicio{
         height: auto;
         width: 100%;  
+        background-color: rgb(220, 220, 194);
         display: flex;
 }
 
 .left{
     background-image: url(images/fotocamara.png);
-    height: 100vh;
-    width: 50%;
     background-size: cover;
     background-position: right;
+    height: 100vh;
+    width: 50%;
     opacity: .6;
-    
     
 }
 
@@ -121,20 +127,51 @@
     width: 100%;
     background-color: rgb(220, 220, 194);
     }
+.cont_mifoto{
+        width: 100%;
+        min-height: 100vh;
+        background-color:  rgb(220, 220, 194);
+        padding: 20px;
+        display: flex;
+    }
+    
+.foto1{
+        background-image: url(images/mifoto.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+.foto2{
+        background-image: url(images/pexels-allec-gomes-4016854.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+.foto3{
+        background-image: url(images/pexels-harrison-haines-3800848.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
 
 .cont_sobremi{
     display: flex;
     background-color:  rgb(220, 220, 194);
 }
 
-.cont_info{
-    width: 100%;
-    background-color:  rgb(220, 220, 194);
+.español{
     border: 4px solid rgb(195, 195, 175);
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+}
+
+.ingles{
+    border: 4px solid rgb(195, 195, 175);
+}
+
+.cont_info{
+    background-color:  rgb(220, 220, 194);
+    margin: 5%;
     display: flex;
+    
 }
 
 .cont_info p{
@@ -145,23 +182,11 @@
     font-family: 'Josefin Slab', serif;
     text-align: center;
     background-color:  rgb(220, 220, 194);
-    font-size: 25px;
-    padding: 60px;
+    font-size: 20px;
+    padding: 30px;
     
 }
 
-.cont_mifoto{
-    height: 100vh;
-    width: 40%;
-    background-color:  rgb(220, 220, 194);
-}
-
-.cont_mifoto img{
-    width: 200px;
-    margin-top: 35%;
-    margin-top: 80px;
-    margin-left: 80px;
-}
 /*fin de sobre mí*/
 
 /*inicio de portfolio*/
@@ -437,4 +462,53 @@ footer{
 }
 /*fin footer*/
 
-@media only screen and ()
+@media only screen and (max-width: 990px){
+
+    .nav-link{
+        font-size: 13px;
+    }
+
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .cont_inicio{
+        display: inline-block;
+
+    }
+
+    .call{
+        margin-bottom: 15%;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .hola{
+        font-size: 20px;
+    }
+
+    .right p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1900px){
+    .call{
+        width: 90%;
+        padding: 15px;
+        margin-top: 150px;
+    }
+    .call .hola{
+        font-size: 25px;
+    }
+    .call p{
+        font-size: 20px;
+    }
+
+}
+
