@@ -1,514 +1,478 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Josefin+Slab&family=Sono:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Josefin+Slab&family=Sono:wght@200&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color:  rgb(237, 237, 202);
-    font-family: 'Cormorant Garamond', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(237, 237, 202);
+  font-family: "Cormorant Garamond", serif;
 }
 /*inicio de header*/
-.navbar{
-    background-color:  rgb(237, 237, 202);
-    display: flex;
-    justify-content: space-evenly;
+.navbar {
+  background-color: rgb(237, 237, 202);
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.logo{
-    color: black;
-    font-size: 25px;
-    font-weight: bolder;
-    padding: 10px;
+.logo {
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 10px;
 }
 
-
-
-.navbar-collapse{
-    display: flex;
-    justify-content: center;
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
 }
 
-.nav-link{
-    color: black !important;
-    font-size: 14px;
-    font-weight: bold;   
-    width: 100px;
-    text-align: center;
+.nav-link {
+  color: black !important;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
 }
 
-
-.nav-link:hover{
-    transform: scale(1.09);
-    transition: all .9s;
+.nav-link:hover {
+  transform: scale(1.09);
+  transition: all 0.9s;
 }
 
-
-.navbar-nav li{
-    margin: auto;
-    margin-left: 5%;
-   
+.navbar-nav li {
+  margin: auto;
+  margin-left: 5%;
 }
 
-.navbar-toggler i{ 
-    color:black;
-    border: none;
+.navbar-toggler i {
+  color: black;
+  border: none;
 }
 
 /*fin de header*/
 
-.sec{
-    font-family: 'Josefin Slab', serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px;
-    border: 1px solid black;
+.sec {
+  font-family: "Josefin Slab", serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  border: 1px solid black;
 }
 
 /*inicio de inicio*/
-.cont_inicio{
-        height: auto;
-        width: 100%;  
-        background-color: rgb(220, 220, 194);
-        display: flex;
+.cont_inicio {
+  height: auto;
+  width: 100%;
+  background-color: rgb(220, 220, 194);
+  display: flex;
 }
 
-.left{
-    background-image: url(images/fotocamara.png);
-    background-size: cover;
-    background-position: right;
-    height: 100vh;
-    width: 50%;
-    opacity: .6;
-    
+.left {
+  background-image: url(images/fotocamara.png);
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  width: 50%;
+  opacity: 0.6;
 }
 
-.right{
-    height: auto;
-    width: 50%;
-    background-color: rgb(220, 220, 194);
-    
+.right {
+  height: auto;
+  width: 50%;
+  background-color: rgb(220, 220, 194);
 }
 
 .call {
-    max-width: 70%;
-    padding: 40px;
-    border: 5px solid rgb(200, 200, 178);
-    margin: auto;
-    margin-top: 55px;
-    background-color: rgb(220, 220, 194);
+  max-width: 70%;
+  padding: 40px;
+  border: 5px solid rgb(200, 200, 178);
+  margin: auto;
+  margin-top: 55px;
+  background-color: rgb(220, 220, 194);
 }
 
-.call, .hola{
-    color: rgb(92, 92, 92);
-    font-family: 'Josefin Slab', serif;
-    font-weight: bold;
-    font-size: 35px;
-    text-align: center;
-    background-color: rgb(220, 220, 194);
+.call,
+.hola {
+  color: rgb(92, 92, 92);
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  background-color: rgb(220, 220, 194);
 }
 
-.call p{
-    color: rgb(92, 92, 92);
-    font-family: 'Josefin Slab', serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgb(220, 220, 194);
-    }
+.call p {
+  color: rgb(92, 92, 92);
+  font-family: "Josefin Slab", serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(220, 220, 194);
+}
 /*fin de inicio*/
 
 /*inicio de sobre mí*/
-.cont{
-    height: auto;
-    width: 100%;
-    background-color: rgb(220, 220, 194);
-    }
-.cont_mifoto{
-        width: 100%;
-        min-height: 100vh;
-        background-color:  rgb(220, 220, 194);
-        padding: 20px;
-        display: flex;
-    }
-    
-.foto1{
-        background-image: url(images/mifoto.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
-.foto2{
-        background-image: url(images/pexels-allec-gomes-4016854.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
-.foto3{
-        background-image: url(images/pexels-harrison-haines-3800848.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
-
-.cont_sobremi{
-    display: flex;
-    background-color:  rgb(220, 220, 194);
+.cont {
+  height: auto;
+  width: 100%;
+  background-color: rgb(220, 220, 194);
 }
 
-.español{
-    border: 4px solid rgb(195, 195, 175);
+.container{
+    border: solid 20px rgb(220, 220, 194);;
 }
 
-.ingles{
-    border: 4px solid rgb(195, 195, 175);
+
+.foto {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
 }
 
-.cont_info{
-    background-color:  rgb(220, 220, 194);
-    margin: 5%;
-    display: flex;
-    
+.foto1 {
+  background-image: url(images/pexels-allec-gomes-4016854.jpg);
+  background-size: cover;
 }
 
-.cont_info p{
-    width: 100%;
-    height: 100%;
-    color: rgb(92, 92, 92);
-    font-weight: bold;
-    font-family: 'Josefin Slab', serif;
-    text-align: center;
-    background-color:  rgb(220, 220, 194);
-    font-size: 20px;
-    padding: 30px;
-    
+.foto2 {
+  background-image: url(images/mifoto.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.foto3 {
+  background-image: url(images/pexels-harrison-haines-3800848.jpg);
+  background-size: cover;
+}
+
+.info {
+  font-family: "Josefin Slab", serif;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 5%;
 }
 
 /*fin de sobre mí*/
 
 /*inicio de portfolio*/
-.cont_portfolio{
-    height: auto;
-    width: 100%;
-    background-color: rgb(220, 220, 194);
-    padding: 70px;
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(5, 250px);
-    grid-template-areas: 
+.cont_portfolio {
+  height: auto;
+  width: 100%;
+  background-color: rgb(220, 220, 194);
+  padding: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(5, 250px);
+  grid-template-areas:
     "item1 item2 item2 item3"
     "item4 item4 item5 item3"
     "item6 item7 item5 item8"
     "item6 item10 item10 item8"
     "item9 item9 item12 item11";
-    grid-gap: 5px;
+  grid-gap: 5px;
 }
 
-.item{
-    background-image: url(images/pexels-ali-pazani-3374436.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color:  rgb(220, 220, 194);
+.item {
+  background-image: url(images/pexels-ali-pazani-3374436.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(220, 220, 194);
 }
 
-
-.item1{
-    grid-area: item1;
-    background-image: url(images/pexels-sasha-kim-8484060.jpg);
-    background-position: top;
+.item1 {
+  grid-area: item1;
+  background-image: url(images/pexels-sasha-kim-8484060.jpg);
+  background-position: top;
 }
 
-.item2{
-    grid-area: item2;
-    background-image: url(images/pexels-catalina-carvajal-herrera-5992078.jpg);
-    
+.item2 {
+  grid-area: item2;
+  background-image: url(images/pexels-catalina-carvajal-herrera-5992078.jpg);
 }
 
-.item3{
-    grid-area: item3;
-    background-image: url(images/pexels-ali-pazani-3374436.jpg);
+.item3 {
+  grid-area: item3;
+  background-image: url(images/pexels-ali-pazani-3374436.jpg);
 }
 
-.item4{
-    grid-area: item4;
-    background-image: url(images/pexels-andrea-piacquadio-839011.jpg);
-    background-position: center;
-    
+.item4 {
+  grid-area: item4;
+  background-image: url(images/pexels-andrea-piacquadio-839011.jpg);
+  background-position: center;
 }
 
-.item5{
-    grid-area: item5;
-    background-image: url(images/pexels-ulises-peña-12281201\ \(1\).jpg);
+.item5 {
+  grid-area: item5;
+  background-image: url(images/pexels-ulises-peña-12281201\ \(1\).jpg);
 }
 
-.item6{ 
-    grid-area: item6;
-    background-image: url(images/pexels-scott-foltz-12162376.jpg);
+.item6 {
+  grid-area: item6;
+  background-image: url(images/pexels-scott-foltz-12162376.jpg);
 }
 
-.item7{
-    grid-area: item7;
-    background-image: url(images/pexels-heitor-verdi-2529459.jpg);
+.item7 {
+  grid-area: item7;
+  background-image: url(images/pexels-heitor-verdi-2529459.jpg);
 }
 
-.item8{
-    grid-area: item8;
-    background-image: url(images/pexels-cxpturing-souls-3014808.jpg);
-    background-position: top;
+.item8 {
+  grid-area: item8;
+  background-image: url(images/pexels-cxpturing-souls-3014808.jpg);
+  background-position: top;
 }
 
-.item9{
-    grid-area: item9;
-    background-image: url(images/pexels-sasha-kim-8484058.jpg);
+.item9 {
+  grid-area: item9;
+  background-image: url(images/pexels-sasha-kim-8484058.jpg);
 }
 
-.item10{
-    grid-area: item10;
-    background-image: url(images/pexels-brenda-lelis-2899746.jpg);
+.item10 {
+  grid-area: item10;
+  background-image: url(images/pexels-brenda-lelis-2899746.jpg);
 }
 
-.item11{
-    grid-area: item11;
-    background-image: url(images/pexels-daniel-duarte-13005188.jpg);
-    background-position: top;
+.item11 {
+  grid-area: item11;
+  background-image: url(images/pexels-daniel-duarte-13005188.jpg);
+  background-position: top;
 }
 
-.item12{
-    grid-area: item12;
-    background-image: url(images/pexels-marcelo-chagas-3335352.jpg);
-    background-position: top;
+.item12 {
+  grid-area: item12;
+  background-image: url(images/pexels-marcelo-chagas-3335352.jpg);
+  background-position: top;
 }
 
 /*fin de portfolio */
 
 /*fin formulario*/
-.cont_form{
-    width: 100%;
-    height: auto;
-    background-color: rgb(220, 220, 194);
-    display: flex;
+.cont_form {
+  width: 100%;
+  height: auto;
+  background-color: rgb(220, 220, 194);
+  display: flex;
 }
 
-.form_left{
-    height: auto;
-    width: 50%;
-    background-color: rgb(220, 220, 194);
+.form_left {
+  height: auto;
+  width: 50%;
+  background-color: rgb(220, 220, 194);
 }
 
-.cajacontacto{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    background-color: rgb(220, 220, 194);
-    font-size: 25px;
-    width: 80%;
-    height: auto;
-    padding: 40px;
-    margin: auto;
-    margin-top: 125px;
-    margin-left: 100px;
+.cajacontacto {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(220, 220, 194);
+  font-size: 25px;
+  width: 80%;
+  height: auto;
+  padding: 40px;
+  margin: auto;
+  margin-top: 125px;
+  margin-left: 100px;
 }
 
-.cajacontacto p{
-    color: rgb(92, 92, 92);
-    font-family: 'Josefin Slab', serif;
-    font-weight: bold;
-    background-color: rgb(220, 220, 194);
-    border: solid 3px rgb(191, 191, 162);
-    padding: 30px;
+.cajacontacto p {
+  color: rgb(92, 92, 92);
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  background-color: rgb(220, 220, 194);
+  border: solid 3px rgb(191, 191, 162);
+  padding: 30px;
 }
 
-.form_right{
-    height: auto;
-    width: 60%;
-    background-color: rgb(220, 220, 194);
+.form_right {
+  height: auto;
+  width: 60%;
+  background-color: rgb(220, 220, 194);
 }
 
-.formulario{
-    display: block;
-    color: black;
-    font-size: 20px;
-    padding: 40px;
-    margin: auto;
-    margin-top: 16px;
-    border: 5px double rgb(191, 191, 162);
-    width: 60%;
-    height: 95%;
+.formulario {
+  display: block;
+  color: black;
+  font-size: 20px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 16px;
+  border: 5px double rgb(191, 191, 162);
+  width: 60%;
+  height: 95%;
 }
 
-label{
-    font-family: 'Josefin Slab', serif;
+label {
+  font-family: "Josefin Slab", serif;
 }
 
 input {
-    padding: 6px;
-    width: 100%;}
-
-input::placeholder { 
-    font-family: 'Josefin Slab', serif;
-    color: rgb(123, 121, 121);
-    font-size: 20px;
-}
-textarea{
-    max-height: 100px;
+  padding: 6px;
+  width: 100%;
 }
 
-textarea::placeholder { 
-    font-family: 'Josefin Slab', serif;
-    color: rgb(123, 121, 121);
-    font-size: 20px;
+input::placeholder {
+  font-family: "Josefin Slab", serif;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
+}
+textarea {
+  max-height: 100px;
 }
 
-button{
-    font-size: 15px;
-    font-family: 'Josefin Slab', serif;
-    background-color: rgb(205, 201, 201);
-    padding: 5px;
-    border: 2px solid rgb(167, 165, 165);
-    margin-left: 80%;
+textarea::placeholder {
+  font-family: "Josefin Slab", serif;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
 }
 
-button:hover{
-    background-color: rgb(172, 172, 172);;
+button {
+  font-size: 15px;
+  font-family: "Josefin Slab", serif;
+  background-color: rgb(205, 201, 201);
+  padding: 5px;
+  border: 2px solid rgb(167, 165, 165);
+  margin-left: 80%;
+}
+
+button:hover {
+  background-color: rgb(172, 172, 172);
 }
 /*fin de mi formulario*/
 
 /*inicio de mi contacto */
-.cont h2{
-    text-align: center;
-    display: inline-block;
-    color: rgb(92, 92, 92);
-    font-family: 'Josefin Slab', serif;
-    font-size: 30px;
-    font-weight: bolder;
-    background-color: rgb(220, 220, 194);
-    padding: 30px;
-    border: 3px double rgb(0, 0, 0);
-    margin-left: 28%;
-    margin-top: 5%;
-    
+.cont h2 {
+  text-align: center;
+  display: inline-block;
+  color: rgb(92, 92, 92);
+  font-family: "Josefin Slab", serif;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: rgb(220, 220, 194);
+  padding: 30px;
+  border: 3px double rgb(0, 0, 0);
+  margin-left: 28%;
+  margin-top: 5%;
 }
 
-.cajas{
-    display: flex;
-    justify-content: space-evenly;
-    color: rgb(92, 92, 92);
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    font-size: 50px;
-    background-color:  rgb(220, 220, 194);
-    margin-top: 5%;
+.cajas {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(92, 92, 92);
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(220, 220, 194);
+  margin-top: 5%;
 }
 
-.caja1, .caja2, .caja3{ 
-    width: 20%;
-    padding: 30px;
-    border: 3px solid rgb(195, 195, 175);
+.caja1,
+.caja2,
+.caja3 {
+  width: 20%;
+  padding: 30px;
+  border: 3px solid rgb(195, 195, 175);
 }
 
-.caja1:hover{
-    transform: scale(1.09);
-    transition: all 0.9s;
-    box-shadow: 0 0 10px rgb(104, 102, 102);
+.caja1:hover {
+  transform: scale(1.09);
+  transition: all 0.9s;
+  box-shadow: 0 0 10px rgb(104, 102, 102);
 }
 
-.caja2:hover{
-    transform: scale(1.09);
-    transition: all 0.9s;
-    box-shadow: 0 0 10px rgb(104, 102, 102);
+.caja2:hover {
+  transform: scale(1.09);
+  transition: all 0.9s;
+  box-shadow: 0 0 10px rgb(104, 102, 102);
 }
 
-.caja3:hover{
-    transform: scale(1.09);
-    transition: all 0.9s;
-    box-shadow: 0 0 10px rgb(104, 102, 102);
+.caja3:hover {
+  transform: scale(1.09);
+  transition: all 0.9s;
+  box-shadow: 0 0 10px rgb(104, 102, 102);
 }
 
-.cajas h3{
-    color: rgb(92, 92, 92);
-    font-family: 'Josefin Slab', serif;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 20px;
+.cajas h3 {
+  color: rgb(92, 92, 92);
+  font-family: "Josefin Slab", serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
 }
 
-.cajas i{
-    color: rgb(92, 92, 92);
-    background-color: beige;   
+.cajas i {
+  color: rgb(92, 92, 92);
+  background-color: beige;
 }
 /*inicio de mi contacto */
 
 /*inicio footer*/
-footer{
-    background-color:  rgb(237, 237, 202);
-    font-size: 40px;
-    text-align: center;
-    padding: 20px;
-    border: 2px solid rgb(220, 220, 194);
-
+footer {
+  background-color: rgb(237, 237, 202);
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid rgb(220, 220, 194);
 }
 
-.redes i{
-    color: rgb(160, 160, 134);
-    letter-spacing: 20px;
+.redes i {
+  color: rgb(160, 160, 134);
+  letter-spacing: 20px;
 }
 
-.redes i:hover{
-    color: rgb(189, 189, 189);
-    transform: scale(1.09);
-    transition: all 0.9s;
+.redes i:hover {
+  color: rgb(189, 189, 189);
+  transform: scale(1.09);
+  transition: all 0.9s;
 }
 /*fin footer*/
 
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 990px) {
+  .nav-link {
+    font-size: 13px;
+  }
 
-    .nav-link{
-        font-size: 13px;
-    }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .cont_inicio {
+    display: inline-block;
+  }
 
-    .left{
-        width: 100%;
-    }
-    .right{
-        width: 100%;
-    }
-    .cont_inicio{
-        display: inline-block;
+  .call {
+    margin-bottom: 15%;
+    width: 100%;
+    padding: 10px;
+  }
 
-    }
+  .hola {
+    font-size: 20px;
+  }
 
-    .call{
-        margin-bottom: 15%;
-        width: 100%;
-        padding: 10px;
-    }
-    
-    .hola{
-        font-size: 20px;
-    }
-
-    .right p{
-        font-size: 15px;
-        text-align: center;
-    }
-
-
+  .right p {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
-@media only screen and (min-width: 990px) and (max-width: 1900px){
-    .call{
-        width: 90%;
-        padding: 15px;
-        margin-top: 150px;
-    }
-    .call .hola{
-        font-size: 25px;
-    }
-    .call p{
-        font-size: 20px;
-    }
-
+@media only screen and (min-width: 990px) and (max-width: 1900px) {
+  .call {
+    width: 90%;
+    padding: 15px;
+    margin-top: 150px;
+  }
+  .call .hola {
+    font-size: 25px;
+  }
+  .call p {
+    font-size: 20px;
+  }
 }
-
