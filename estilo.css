@@ -314,6 +314,15 @@ label {
 input {
   padding: 6px;
   width: 100%;
+  font-family: "Josefin Slab", serif;
+  border: none;
+  border-bottom: 2px solid rgb(204, 204, 181);
+  background: transparent;
+}
+
+input:focus{
+  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+  outline: none;
 }
 
 input::placeholder {
@@ -323,6 +332,12 @@ input::placeholder {
 }
 textarea {
   max-height: 100px;
+  resize: none;
+}
+
+textarea:focus{
+  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+  outline: none;
 }
 
 textarea::placeholder {
@@ -355,7 +370,7 @@ button:hover {
   font-weight: bolder;
   background-color: rgb(220, 220, 194);
   padding: 30px;
-  border: 3px double rgb(0, 0, 0);
+  border: solid 3px rgb(191, 191, 162);
   margin-left: 28%;
   margin-top: 5%;
 }
@@ -377,6 +392,7 @@ button:hover {
   width: 20%;
   padding: 30px;
   border: 3px solid rgb(195, 195, 175);
+  border-radius: 100%;
 }
 
 .caja1:hover {
@@ -400,6 +416,7 @@ button:hover {
 .cajas h3 {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
+  background: none;
   font-size: 25px;
   font-weight: bold;
   padding: 20px;
