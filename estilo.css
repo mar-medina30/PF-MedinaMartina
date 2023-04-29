@@ -54,6 +54,7 @@
 /*fin de header*/
 
 .sec {
+  width: 100%;
   font-family: "Josefin Slab", serif;
   font-size: 20px;
   font-weight: bold;
@@ -117,21 +118,25 @@
 
 /*inicio de sobre mí*/
 .cont {
-  height: auto;
+  height: 100%;
   width: 100%;
   background-color: rgb(220, 220, 194);
 }
 
 .container{
-    border: solid 20px rgb(220, 220, 194);;
+    border: solid 20px rgb(220, 220, 194);
 }
 
+.cont_misfotos{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(220, 220, 194);
+}
 
 .foto {
   width: 200px;
   height: 200px;
-  background-color: rgb(255, 255, 255);
-  margin: 30px;
+  margin: 20px;
 }
 
 .foto1 {
@@ -155,7 +160,6 @@
   font-size: 20px;
   color: black;
   font-weight: bold;
-  padding: 20px;
   margin-top: 5%;
 }
 
@@ -166,7 +170,8 @@
   height: auto;
   width: 100%;
   background-color: rgb(220, 220, 194);
-  padding: 70px;
+  padding: 20px;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(5, 250px);
@@ -361,7 +366,13 @@ button:hover {
 /*fin de mi formulario*/
 
 /*inicio de mi contacto */
-.cont h2 {
+.cont_micontacto {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(220, 220, 194);
+}
+
+.cont_micontacto h2 {
   text-align: center;
   display: inline-block;
   color: rgb(92, 92, 92);
@@ -369,7 +380,7 @@ button:hover {
   font-size: 30px;
   font-weight: bolder;
   background-color: rgb(220, 220, 194);
-  padding: 30px;
+  padding: 20px;
   border: solid 3px rgb(191, 191, 162);
   margin-left: 28%;
   margin-top: 5%;
@@ -390,10 +401,9 @@ button:hover {
 .caja2,
 .caja3 {
   width: 20%;
-  padding: 30px;
+  padding: 20px;
   border: 3px solid rgb(195, 195, 175);
-  border-radius: 100%;
-}
+  }
 
 .caja1:hover {
   transform: scale(1.09);
@@ -424,7 +434,7 @@ button:hover {
 
 .cajas i {
   color: rgb(92, 92, 92);
-  background-color: beige;
+  background-color:  rgb(237, 237, 202);
 }
 /*inicio de mi contacto */
 
@@ -492,4 +502,183 @@ footer {
   .call p {
     font-size: 20px;
   }
+}
+
+@media only screen and (max-width: 390px){
+
+  .foto{
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+  }
+
+  .info{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 660px){
+  .foto{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .info{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .cont_portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-template-areas: 
+      "item1 item2"
+      "item3 item4"
+      "item3 item5"
+      "item6 item5"
+      "item8 item11"
+      "item8 item10"
+      "item9 item9"
+      "item7 item12";
+
+  }
+}
+
+@media only screen and (min-width: 580px) and (max-width:1600px) {
+  .cont_portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 150px);
+    grid-template-areas:
+    "item1 item2 item2 item3"
+    "item1 item4 item5 item3"
+    "item6 item7 item5 item8"
+    "item6 item10 item10 item8"
+    "item9 item9 item12 item11"
+    "item9 item9 item12 item11";
+
+  }
+}
+
+
+@media only screen and (min-width: 690px) and (max-width: 1260px){
+
+  .cont_form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form_left, .form_right{
+    width: 100%;
+    height: 50%;
+  }
+  
+
+  .cajacontacto{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+
+  .formulario{
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+} 
+
+@media only screen and (min-width: 320px) and (max-width: 690px){
+  .cont_form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .form_left, .form_right{
+    width: 100%;
+    height: 50%;
+  }
+
+  .cajacontacto{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .cajacontacto p{
+    font-size: 20px;
+  }
+
+  .formulario{
+    width: 90%;
+    margin-bottom: 20px ;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1210px){
+
+  .cont h2{
+    margin-left: 25%;
+
+  }
+
+
+  .caja1, .caja2, .caja3{
+    width: 150px;
+    height: 150px;
+    padding: 0;
+}
+
+.cajas h3{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.cajas a{
+  margin: 0;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .cont_micontacto h2{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+
+  .cajas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja1, .caja2, .caja3{
+    width: 130px;
+    height: 130px;
+    padding: 0 ;
+    margin: 10px; 
+  }
+  
+  .caja3{
+    margin-bottom: 40px;
+  }
+
+  .cont_micontacto h3{
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1210px){
+
+  .cont_micontacto h2{
+    padding: 20px;
+    margin-right: 28%;
+  }
+
 }
