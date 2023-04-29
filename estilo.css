@@ -59,6 +59,7 @@
   font-size: 20px;
   font-weight: bold;
   padding: 15px;
+  margin: 0;
   border: 1px solid black;
 }
 
@@ -590,7 +591,7 @@ footer {
   }
 } 
 
-@media only screen and (min-width: 320px) and (max-width: 690px){
+@media only screen and (max-width: 690px){
   .cont_form{
     display: flex;
     flex-wrap: wrap;
@@ -609,12 +610,23 @@ footer {
   }
 
   .cajacontacto p{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .formulario{
     width: 90%;
     margin-bottom: 20px ;
+    padding: 10px;
+  }
+
+  input{
+    width: 90%;
+    margin-left: 10px;
+  }
+  
+  textarea{
+    width: 100%;
+  
   }
 }
 
