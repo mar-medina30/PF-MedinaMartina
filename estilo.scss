@@ -6,6 +6,11 @@ $bg-color1: rgb(227, 227, 209);
 $bg-color2: rgb(244, 244, 234);
 $font1: "Josefin Slab", serif;
 
+@mixin sizes ($height, $width, $bg-color){
+  height: $height;
+  width: $width;
+  background-color: $bg-color;
+}
 
 *{
   margin: 0;
@@ -72,25 +77,20 @@ $font1: "Josefin Slab", serif;
 
 /*inicio de inicio*/
 .cont_inicio {
-  height: auto;
-  width: 100%;
-  background-color: $bg-color1;
+  @include sizes (auto, 100%, $bg-color1);
   display: flex;
 }
 
 .left {
+  @include sizes (100vh, 50%, none);
   background-image: url(images/fotocamara.png);
   background-size: cover;
   background-position: right;
-  height: 100vh;
-  width: 50%;
   opacity: 0.6;
 }
 
 .right {
-  height: auto;
-  width: 50%;
-  background-color: $bg-color1;
+  @include sizes (auto, 50%, $bg-color1);
 }
 
 .call {
@@ -126,9 +126,7 @@ $font1: "Josefin Slab", serif;
 
 /*inicio de sobre mí*/
 .cont {
-  height: 100%;
-  width: 100%;
-  background-color: $bg-color1;
+  @include sizes (100%, 100%, $bg-color1);
 }
 
 .container{
@@ -143,10 +141,8 @@ $font1: "Josefin Slab", serif;
 }
 
 .foto {
-  width: 200px;
-  height: 200px;
+  @include sizes (200px, 200px, $bg-color1);
   margin: 20px;
-  background-color: $bg-color1;
 }
 
 .foto1 {
@@ -177,9 +173,7 @@ $font1: "Josefin Slab", serif;
 
 /*inicio de portfolio*/
 .cont_portfolio {
-  height: auto;
-  width: 100%;
-  background-color: $bg-color1;
+  @include sizes (auto, 100%, $bg-color1);
   padding: 20px;
   margin: 0;
   display: grid;
@@ -270,25 +264,24 @@ $font1: "Josefin Slab", serif;
 
 /*fin formulario*/
 .cont_form {
-  width: 100%;
-  height: auto;
-  background-color: $bg-color1;
+  @include sizes (auto, 100%, $bg-color1);
   display: flex;
 }
 
 .form_left {
-  height: auto;
-  width: 50%;
-  background-color: $bg-color1;
+  @include sizes (auto, 50%, $bg-color1)
+}
+
+
+.form_right {
+  @include sizes (auto, 60%, bg-color1)
 }
 
 .cajacontacto {
+  @include sizes (auto, 80%, $bg-color1);
   color: rgb(0, 0, 0);
   text-align: center;
-  background-color: $bg-color1;
   font-size: 25px;
-  width: 80%;
-  height: auto;
   padding: 40px;
   margin: auto;
   margin-top: 80px;
@@ -305,23 +298,15 @@ $font1: "Josefin Slab", serif;
   padding: 30px;
 }
 
-.form_right {
-  height: auto;
-  width: 60%;
-  background-color: $bg-color1;
-}
-
 .formulario {
+  @include sizes (95%, 60%, $bg-color2);
   display: block;
   color: black;
-  background-color: $bg-color2;
   font-size: 20px;
   padding: 40px;
   margin: auto;
   margin-top: 16px;
   border: 5px double rgb(191, 191, 162);
-  width: 60%;
-  height: 95%;
 }
 
 label {
@@ -380,9 +365,7 @@ button:hover {
 
 /*inicio de mi contacto */
 .cont_micontacto {
-  height: 550px;
-  width: 100%;
-  background-color: $bg-color1;
+  @include sizes (550px, 100%, $bg-color1);
 }
 
 .cont_micontacto h2 {
@@ -457,11 +440,12 @@ button:hover {
   color: rgb(92, 92, 92);
   background-color:  $bg-color1;
 }
+
 /*inicio de mi contacto */
 
 /*inicio footer*/
 footer {
-  background-color: $bg-color2;
+  background-image: linear-gradient(to top, #c2c2ac, #cecebb, #dbdbcb, #e7e7da, #f4f4ea);
   font-size: 40px;
   text-align: center;
   padding: 20px;
@@ -480,4 +464,4 @@ footer {
 }
 /*fin footer*/
 
-@import 'media';
+@import 'media'

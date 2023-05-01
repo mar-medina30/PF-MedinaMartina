@@ -73,11 +73,12 @@
 }
 
 .left {
+  height: 100vh;
+  width: 50%;
+  background-color: none;
   background-image: url(images/fotocamara.png);
   background-size: cover;
   background-position: right;
-  height: 100vh;
-  width: 50%;
   opacity: 0.6;
 }
 
@@ -137,10 +138,10 @@
 }
 
 .foto {
-  width: 200px;
   height: 200px;
-  margin: 20px;
+  width: 200px;
   background-color: rgb(227, 227, 209);
+  margin: 20px;
 }
 
 .foto1 {
@@ -257,8 +258,8 @@
 /*fin de portfolio */
 /*fin formulario*/
 .cont_form {
-  width: 100%;
   height: auto;
+  width: 100%;
   background-color: rgb(227, 227, 209);
   display: flex;
 }
@@ -269,13 +270,19 @@
   background-color: rgb(227, 227, 209);
 }
 
+.form_right {
+  height: auto;
+  width: 60%;
+  background-color: bg-color1;
+}
+
 .cajacontacto {
+  height: auto;
+  width: 80%;
+  background-color: rgb(227, 227, 209);
   color: rgb(0, 0, 0);
   text-align: center;
-  background-color: rgb(227, 227, 209);
   font-size: 25px;
-  width: 80%;
-  height: auto;
   padding: 40px;
   margin: auto;
   margin-top: 80px;
@@ -292,23 +299,17 @@
   padding: 30px;
 }
 
-.form_right {
-  height: auto;
-  width: 60%;
-  background-color: rgb(227, 227, 209);
-}
-
 .formulario {
+  height: 95%;
+  width: 60%;
+  background-color: rgb(244, 244, 234);
   display: block;
   color: black;
-  background-color: rgb(244, 244, 234);
   font-size: 20px;
   padding: 40px;
   margin: auto;
   margin-top: 16px;
   border: 5px double rgb(191, 191, 162);
-  width: 60%;
-  height: 95%;
 }
 
 label {
@@ -447,7 +448,7 @@ button:hover {
 /*inicio de mi contacto */
 /*inicio footer*/
 footer {
-  background-color: rgb(244, 244, 234);
+  background-image: linear-gradient(to top, #c2c2ac, #cecebb, #dbdbcb, #e7e7da, #f4f4ea);
   font-size: 40px;
   text-align: center;
   padding: 20px;
