@@ -1,8 +1,13 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Sono:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Josefin+Slab&family=Sono:wght@200&display=swap");
-* {
+
+$bg-color1: rgb(227, 227, 209);
+$bg-color2: rgb(244, 244, 234);
+$font1: "Josefin Slab", serif;
+
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,7 +35,7 @@
 
 .nav-link {
   color: black !important;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;;
   font-size: 14px;
   font-weight: bold;
   width: 100px;
@@ -53,10 +58,11 @@
 }
 
 /*fin de header*/
+
 .sec {
   width: 100%;
-  font-family: "Josefin Slab", serif;
-  background-color: rgb(244, 244, 234);
+  font-family: $font1;
+  background-color: $bg-color2;
   font-size: 20px;
   font-weight: bold;
   padding: 15px;
@@ -68,7 +74,7 @@
 .cont_inicio {
   height: auto;
   width: 100%;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
   display: flex;
 }
 
@@ -84,7 +90,7 @@
 .right {
   height: auto;
   width: 50%;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .call {
@@ -93,54 +99,54 @@
   border: 5px solid rgb(200, 200, 178);
   margin: auto;
   margin-top: 55px;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .call,
 .hola {
   color: rgb(92, 92, 92);
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   font-weight: bold;
   font-size: 35px;
   text-align: center;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .call p {
   color: rgb(92, 92, 92);
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   font-size: 25px;
   font-weight: bold;
   text-align: left;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
-
 /*fin de inicio*/
+
 /*inicio de sobre mí*/
 .cont {
   height: 100%;
   width: 100%;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
-.container {
-  background-color: rgb(244, 244, 234);
-  border: solid 30px rgb(227, 227, 209);
+.container{
+  background-color: $bg-color2;
+  border: solid 30px $bg-color1;
 }
 
-.cont_misfotos {
+.cont_misfotos{
   display: flex;
   justify-content: center;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .foto {
   width: 200px;
   height: 200px;
   margin: 20px;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .foto1 {
@@ -160,7 +166,7 @@
 }
 
 .info {
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   font-size: 20px;
   color: black;
   font-weight: bold;
@@ -168,17 +174,23 @@
 }
 
 /*fin de sobre mí*/
+
 /*inicio de portfolio*/
 .cont_portfolio {
   height: auto;
   width: 100%;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
   padding: 20px;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(5, 250px);
-  grid-template-areas: "item1 item2 item2 item3" "item4 item4 item5 item3" "item6 item7 item5 item8" "item6 item10 item10 item8" "item9 item9 item12 item11";
+  grid-template-areas:
+    "item1 item2 item2 item3"
+    "item4 item4 item5 item3"
+    "item6 item7 item5 item8"
+    "item6 item10 item10 item8"
+    "item9 item9 item12 item11";
   grid-gap: 5px;
 }
 
@@ -186,7 +198,7 @@
   background-image: url(images/pexels-ali-pazani-3374436.jpg);
   background-size: cover;
   background-position: center;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .item1 {
@@ -255,24 +267,25 @@
 }
 
 /*fin de portfolio */
+
 /*fin formulario*/
 .cont_form {
   width: 100%;
   height: auto;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
   display: flex;
 }
 
 .form_left {
   height: auto;
   width: 50%;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .cajacontacto {
   color: rgb(0, 0, 0);
   text-align: center;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
   font-size: 25px;
   width: 80%;
   height: auto;
@@ -285,9 +298,9 @@
 
 .cajacontacto p {
   color: rgb(92, 92, 92);
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   font-weight: bold;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
   border: solid 3px rgb(191, 191, 162);
   padding: 30px;
 }
@@ -295,13 +308,13 @@
 .form_right {
   height: auto;
   width: 60%;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .formulario {
   display: block;
   color: black;
-  background-color: rgb(244, 244, 234);
+  background-color: $bg-color2;
   font-size: 20px;
   padding: 40px;
   margin: auto;
@@ -312,61 +325,48 @@
 }
 
 label {
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
 }
 
 input {
   padding: 6px;
   width: 100%;
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   border: none;
   border-bottom: 2px solid rgb(204, 204, 181);
   background: transparent;
 }
 
-input:focus {
+input:focus{
   background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
   outline: none;
 }
 
-input::-moz-placeholder {
-  font-family: "Josefin Slab", serif;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
 input::placeholder {
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   color: rgb(123, 121, 121);
   font-size: 20px;
 }
-
 textarea {
-  background-color: rgb(244, 244, 234);
+  background-color: $bg-color2;
   max-height: 100px;
   resize: none;
 }
 
-textarea:focus {
+textarea:focus{
   background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
   outline: none;
 }
 
-textarea::-moz-placeholder {
-  font-family: "Josefin Slab", serif;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
 textarea::placeholder {
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   color: rgb(123, 121, 121);
   font-size: 20px;
 }
 
 button {
   font-size: 15px;
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   background-color: rgb(205, 201, 201);
   padding: 5px;
   border: 2px solid rgb(167, 165, 165);
@@ -376,23 +376,23 @@ button {
 button:hover {
   background-color: rgb(172, 172, 172);
 }
-
 /*fin de mi formulario*/
+
 /*inicio de mi contacto */
 .cont_micontacto {
   height: 550px;
   width: 100%;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
 }
 
 .cont_micontacto h2 {
   text-align: center;
   display: inline-block;
   color: rgb(92, 92, 92);
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   font-size: 30px;
   font-weight: bolder;
-  background-color: rgb(227, 227, 209);
+  background-color: $bg-color1;
   padding: 20px;
   border: solid 3px rgb(191, 191, 162);
   margin-left: 28%;
@@ -403,13 +403,16 @@ button:hover {
 }
 
 @keyframes efecto {
-  from {
-    background-color: rgb(227, 227, 209);
+  from{
+    background-color: $bg-color1;
   }
-  to {
+
+  to{
     background-color: rgb(205, 205, 187);
   }
 }
+
+
 .cajas {
   display: flex;
   justify-content: space-evenly;
@@ -417,22 +420,33 @@ button:hover {
   font-family: "Cinzel", serif;
   text-align: center;
   font-size: 50px;
-  background-color: rgb(227, 227, 209);
+  background-color:$bg-color1;
   margin-top: 5%;
+  
+  .caja1 {
+    width: 20%;
+    background-color: $bg-color1;
+    padding: 20px;
+    border: 3px solid rgb(195, 195, 175);
+    
+    .caja1:hover {
+      transform: scale(1.20);
+      transition: all 2.5s;
+    }
+  }
+
+  .caja2 {
+    @extend .caja1;
+  }
+  
+  .caja3{
+    @extend .caja1;
+  }
 }
-.cajas .caja1, .cajas .caja3, .cajas .caja2 {
-  width: 20%;
-  background-color: rgb(227, 227, 209);
-  padding: 20px;
-  border: 3px solid rgb(195, 195, 175);
-}
-.cajas .caja1 .caja1:hover, .cajas .caja3 .caja1:hover, .cajas .caja1 .caja3:hover, .cajas .caja3 .caja3:hover, .cajas .caja2 .caja1:hover, .cajas .caja2 .caja3:hover, .cajas .caja1 .caja2:hover, .cajas .caja3 .caja2:hover, .cajas .caja2 .caja2:hover {
-  transform: scale(1.2);
-  transition: all 2.5s;
-}
+
 .cajas h3 {
   color: rgb(92, 92, 92);
-  font-family: "Josefin Slab", serif;
+  font-family: $font1;
   background: none;
   font-size: 25px;
   font-weight: bold;
@@ -441,211 +455,29 @@ button:hover {
 
 .cajas i {
   color: rgb(92, 92, 92);
-  background-color: rgb(227, 227, 209);
+  background-color:  $bg-color1;
 }
-
 /*inicio de mi contacto */
+
 /*inicio footer*/
 footer {
-  background-color: rgb(244, 244, 234);
+  background-color: $bg-color2;
   font-size: 40px;
   text-align: center;
   padding: 20px;
-  border: 2px solid rgb(227, 227, 209);
-}
-footer .redes i {
+  border: 2px solid $bg-color1;
+
+  .redes i {
   color: rgb(160, 160, 134);
   letter-spacing: 20px;
+  }
 }
 
 .redes i:hover {
   color: rgb(189, 189, 189);
-  transform: scale(1.2);
+  transform: scale(1.20);
   transition: all 0.9s;
 }
-
 /*fin footer*/
-@media only screen and (max-width: 990px) {
-  .nav-link {
-    font-size: 13px;
-  }
-  .left {
-    width: 100%;
-  }
-  .right {
-    width: 100%;
-  }
-  .cont_inicio {
-    display: inline-block;
-  }
-  .call {
-    margin-bottom: 15%;
-    width: 100%;
-    padding: 10px;
-  }
-  .hola {
-    font-size: 20px;
-  }
-  .right p {
-    font-size: 15px;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 990px) and (max-width: 1900px) {
-  .call {
-    width: 90%;
-    padding: 15px;
-    margin-top: 150px;
-  }
-  .call .hola {
-    font-size: 25px;
-  }
-  .call p {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 390px) {
-  .foto {
-    width: 90px;
-    height: 90px;
-    margin: 10px;
-  }
-  .info {
-    font-size: 15px;
-  }
-}
-@media only screen and (min-width: 390px) and (max-width: 660px) {
-  .foto {
-    width: 150px;
-    height: 150px;
-    margin-top: 15px;
-  }
-  .info {
-    font-size: 15px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 580px) {
-  .cont_portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8, 200px);
-    grid-template-areas: "item1 item2" "item3 item4" "item3 item5" "item6 item5" "item8 item11" "item8 item10" "item9 item9" "item7 item12";
-  }
-}
-@media only screen and (min-width: 580px) and (max-width: 1600px) {
-  .cont_portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 150px);
-    grid-template-areas: "item1 item2 item2 item3" "item1 item4 item5 item3" "item6 item7 item5 item8" "item6 item10 item10 item8" "item9 item9 item12 item11" "item9 item9 item12 item11";
-  }
-}
-@media only screen and (min-width: 690px) and (max-width: 1260px) {
-  .cont_form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .form_left,
-  .form_right {
-    width: 100%;
-    height: 50%;
-  }
-  .cajacontacto {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 20px;
-  }
-  .formulario {
-    margin-top: 0;
-    margin-bottom: 40px;
-  }
-}
-@media only screen and (max-width: 690px) {
-  .cont_form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .form_left,
-  .form_right {
-    width: 100%;
-    height: 50%;
-  }
-  .cajacontacto {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-  .cajacontacto p {
-    font-size: 15px;
-  }
-  .formulario {
-    width: 90%;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  input {
-    width: 90%;
-    margin-left: 10px;
-  }
-  textarea {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 1210px) {
-  .cont h2 {
-    margin-left: 25%;
-  }
-  .caja1, .cajas .caja2, .cajas .caja3,
-  .caja2,
-  .caja3 {
-    width: 150px;
-    height: 150px;
-    padding: 0;
-  }
-  .cajas h3 {
-    font-size: 20px;
-    padding: 10px;
-  }
-  .cajas a {
-    margin: 0;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .cont_micontacto h2 {
-    width: 90%;
-    margin-left: 5%;
-    font-size: 25px;
-    padding: 10px;
-  }
-  .cajas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .caja1, .cajas .caja2, .cajas .caja3,
-  .caja2,
-  .caja3 {
-    width: 150px;
-    height: 150px;
-    padding: 0;
-    margin: 10px;
-  }
-  .caja3 {
-    margin-bottom: 40px;
-  }
-  .cont_micontacto h3 {
-    font-size: 20px;
-    padding: 10px;
-  }
-  .cajas i {
-    font-size: 40px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 1210px) {
-  .cont_micontacto h2 {
-    padding: 20px;
-    margin-right: 28%;
-  }
-}/*# sourceMappingURL=estilo.css.map */
+
+@import 'media';

@@ -1,0 +1,231 @@
+@media only screen and (max-width: 990px) {
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .cont_inicio {
+    display: inline-block;
+  }
+
+  .call {
+    margin-bottom: 15%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .hola {
+    font-size: 20px;
+  }
+
+  .right p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1900px) {
+  .call {
+    width: 90%;
+    padding: 15px;
+    margin-top: 150px;
+  }
+  .call .hola {
+    font-size: 25px;
+  }
+  .call p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .foto {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 660px) {
+  .foto {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .cont_portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item3 item5"
+      "item6 item5"
+      "item8 item11"
+      "item8 item10"
+      "item9 item9"
+      "item7 item12";
+  }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 1600px) {
+  .cont_portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 150px);
+    grid-template-areas:
+      "item1 item2 item2 item3"
+      "item1 item4 item5 item3"
+      "item6 item7 item5 item8"
+      "item6 item10 item10 item8"
+      "item9 item9 item12 item11"
+      "item9 item9 item12 item11";
+  }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 1260px) {
+  .cont_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form_left,
+  .form_right {
+    width: 100%;
+    height: 50%;
+  }
+
+  .cajacontacto {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+
+  .formulario {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .cont_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form_left,
+  .form_right {
+    width: 100%;
+    height: 50%;
+  }
+
+  .cajacontacto {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .cajacontacto p {
+    font-size: 15px;
+  }
+
+  .formulario {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  input {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1210px) {
+  .cont h2 {
+    margin-left: 25%;
+  }
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+  }
+
+  .cajas h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .cajas a {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cont_micontacto h2 {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .cajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .caja3 {
+    margin-bottom: 40px;
+  }
+
+  .cont_micontacto h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .cajas i {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1210px) {
+  .cont_micontacto h2 {
+    padding: 20px;
+    margin-right: 28%;
+  }
+}
