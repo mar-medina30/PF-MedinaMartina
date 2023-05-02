@@ -5,6 +5,7 @@
 $bg-color1: rgb(227, 227, 209);
 $bg-color2: rgb(244, 244, 234);
 $font1: "Josefin Slab", serif;
+$color-font: rgb(92, 92, 92);
 
 @mixin sizes ($height, $width, $bg-color){
   height: $height;
@@ -29,7 +30,6 @@ $font1: "Josefin Slab", serif;
   color: black;
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
-  font-weight: bolder;
   padding: 10px;
 }
 
@@ -42,7 +42,6 @@ $font1: "Josefin Slab", serif;
   color: black !important;
   font-family: "Cormorant Garamond", serif;;
   font-size: 14px;
-  font-weight: bold;
   width: 100px;
   text-align: center;
 }
@@ -104,7 +103,7 @@ $font1: "Josefin Slab", serif;
 
 .call,
 .hola {
-  color: rgb(92, 92, 92);
+  color: $color-font;
   font-family: $font1;
   font-weight: bold;
   font-size: 35px;
@@ -113,7 +112,7 @@ $font1: "Josefin Slab", serif;
 }
 
 .call p {
-  color: rgb(92, 92, 92);
+  color: $color-font;
   font-family: $font1;
   font-size: 25px;
   font-weight: bold;
@@ -164,7 +163,7 @@ $font1: "Josefin Slab", serif;
 .info {
   font-family: $font1;
   font-size: 20px;
-  color: black;
+  color: $color-font;
   font-weight: bold;
   margin-top: 5%;
 }
@@ -279,7 +278,7 @@ $font1: "Josefin Slab", serif;
 
 .cajacontacto {
   @include sizes (auto, 80%, $bg-color1);
-  color: rgb(0, 0, 0);
+  color: $color-font;
   text-align: center;
   font-size: 25px;
   padding: 40px;
@@ -290,7 +289,7 @@ $font1: "Josefin Slab", serif;
 }
 
 .cajacontacto p {
-  color: rgb(92, 92, 92);
+  color: $color-font;
   font-family: $font1;
   font-weight: bold;
   background-color: $bg-color1;
@@ -301,7 +300,7 @@ $font1: "Josefin Slab", serif;
 .formulario {
   @include sizes (95%, 60%, $bg-color2);
   display: block;
-  color: black;
+  color: $color-font;
   font-size: 20px;
   padding: 40px;
   margin: auto;
@@ -371,7 +370,7 @@ button:hover {
 .cont_micontacto h2 {
   text-align: center;
   display: inline-block;
-  color: rgb(92, 92, 92);
+  color: $color-font;
   font-family: $font1;
   font-size: 30px;
   font-weight: bolder;
@@ -399,45 +398,45 @@ button:hover {
 .cajas {
   display: flex;
   justify-content: space-evenly;
-  color: rgb(92, 92, 92);
+  color: $color-font;
   font-family: "Cinzel", serif;
   text-align: center;
   font-size: 50px;
   background-color:$bg-color1;
   margin-top: 5%;
-  
-  .caja1 {
-    width: 20%;
-    background-color: $bg-color1;
-    padding: 20px;
-    border: 3px solid rgb(195, 195, 175);
-    
-    .caja1:hover {
-      transform: scale(1.20);
-      transition: all 2.5s;
-    }
-  }
+}
 
-  .caja2 {
-    @extend .caja1;
-  }
-  
-  .caja3{
-    @extend .caja1;
-  }
+.caja1 {
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  border: 3px solid  rgb(195, 195, 175);
+}
+
+.caja2{
+  @extend .caja1;
+}
+
+.caja3{
+  @extend .caja1;
+}
+
+.caja:hover {
+  transform: scale(1.20);
+  transition: all 2.5s;
 }
 
 .cajas h3 {
-  color: rgb(92, 92, 92);
+  color: $color-font;
   font-family: $font1;
   background: none;
   font-size: 25px;
   font-weight: bold;
-  padding: 20px;
+  padding: 15px;
 }
 
 .cajas i {
-  color: rgb(92, 92, 92);
+  color: $color-font;
   background-color:  $bg-color1;
 }
 
@@ -461,6 +460,11 @@ footer {
   color: rgb(189, 189, 189);
   transform: scale(1.20);
   transition: all 0.9s;
+}
+
+h4{
+  color: $color-font;
+  font-size: 15px;
 }
 /*fin footer*/
 
