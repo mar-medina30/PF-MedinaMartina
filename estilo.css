@@ -14,40 +14,34 @@
   display: flex;
   justify-content: space-evenly;
 }
-
-.logo {
+.navbar .logo {
   color: black;
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
   padding: 10px;
 }
-
-.navbar-collapse {
+.navbar .navbar-toggler i {
+  color: black;
+  border: none;
+}
+.navbar .navbar-collapse {
   display: flex;
   justify-content: center;
 }
-
-.nav-link {
+.navbar .navbar-nav li {
+  margin: auto;
+  margin-left: 5%;
+}
+.navbar .navbar-nav li .nav-link {
   color: black !important;
   font-family: "Cormorant Garamond", serif;
   font-size: 14px;
   width: 100px;
   text-align: center;
 }
-
-.nav-link:hover {
+.navbar .navbar-nav li .nav-link:hover {
   transform: scale(1.3);
-  transition: all 0.9s;
-}
-
-.navbar-nav li {
-  margin: auto;
-  margin-left: 5%;
-}
-
-.navbar-toggler i {
-  color: black;
-  border: none;
+  transition: all 1.2s;
 }
 
 /*fin de header*/
@@ -63,7 +57,7 @@
 }
 
 /*inicio de inicio*/
-.cont_inicio {
+.cont-inicio {
   height: auto;
   width: 100%;
   background-color: rgb(227, 227, 209);
@@ -95,8 +89,7 @@
   background-color: rgb(227, 227, 209);
 }
 
-.call,
-.hola {
+.hola, .call {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
   font-weight: bold;
@@ -123,42 +116,35 @@
   width: 100%;
   background-color: rgb(227, 227, 209);
 }
-
-.container {
-  background-color: rgb(244, 244, 234);
-  border: solid 30px rgb(227, 227, 209);
-}
-
-.cont_misfotos {
+.cont .cont-misfotos {
   display: flex;
   justify-content: center;
   background-color: rgb(227, 227, 209);
 }
-
-.foto {
+.cont .cont-misfotos .foto {
   height: 200px;
   width: 200px;
   background-color: rgb(227, 227, 209);
   margin: 20px;
 }
-
-.foto1 {
+.cont .cont-misfotos .foto1 {
   background-image: url(images/pexels-allec-gomes-4016854.jpg);
   background-size: cover;
 }
-
-.foto2 {
+.cont .cont-misfotos .foto2 {
   background-image: url(images/mifoto.jpg);
   background-size: cover;
   background-position: bottom;
 }
-
-.foto3 {
+.cont .cont-misfotos .foto3 {
   background-image: url(images/pexels-harrison-haines-3800848.jpg);
   background-size: cover;
 }
-
-.info {
+.cont .container {
+  background-color: rgb(244, 244, 234);
+  border: solid 30px rgb(227, 227, 209);
+}
+.cont .container .info {
   font-family: "Josefin Slab", serif;
   font-size: 20px;
   color: rgb(92, 92, 92);
@@ -168,7 +154,7 @@
 
 /*fin de sobre mí*/
 /*inicio de portfolio*/
-.cont_portfolio {
+.cont-portfolio {
   height: auto;
   width: 100%;
   background-color: rgb(227, 227, 209);
@@ -180,74 +166,60 @@
   grid-template-areas: "item1 item2 item2 item3" "item4 item4 item5 item3" "item6 item7 item5 item8" "item6 item10 item10 item8" "item9 item9 item12 item11";
   grid-gap: 5px;
 }
-
-.item {
-  background-image: url(images/pexels-ali-pazani-3374436.jpg);
+.cont-portfolio .item {
   background-size: cover;
   background-position: center;
   background-color: rgb(227, 227, 209);
 }
-
-.item1 {
+.cont-portfolio .item1 {
   grid-area: item1;
   background-image: url(images/pexels-sasha-kim-8484060.jpg);
   background-position: top;
 }
-
-.item2 {
+.cont-portfolio .item2 {
   grid-area: item2;
   background-image: url(images/pexels-catalina-carvajal-herrera-5992078.jpg);
 }
-
-.item3 {
+.cont-portfolio .item3 {
   grid-area: item3;
   background-image: url(images/pexels-ali-pazani-3374436.jpg);
 }
-
-.item4 {
+.cont-portfolio .item4 {
   grid-area: item4;
   background-image: url(images/pexels-andrea-piacquadio-839011.jpg);
   background-position: center;
 }
-
-.item5 {
+.cont-portfolio .item5 {
   grid-area: item5;
   background-image: url(images/pexels-ulises-peña-12281201\ \(1\).jpg);
 }
-
-.item6 {
+.cont-portfolio .item6 {
   grid-area: item6;
   background-image: url(images/pexels-scott-foltz-12162376.jpg);
 }
-
-.item7 {
+.cont-portfolio .item7 {
   grid-area: item7;
   background-image: url(images/pexels-heitor-verdi-2529459.jpg);
 }
-
-.item8 {
+.cont-portfolio .item8 {
   grid-area: item8;
   background-image: url(images/pexels-cxpturing-souls-3014808.jpg);
   background-position: top;
 }
-
-.item9 {
+.cont-portfolio .item9 {
   grid-area: item9;
   background-image: url(images/pexels-sasha-kim-8484058.jpg);
 }
-
-.item10 {
+.cont-portfolio .item10 {
   grid-area: item10;
   background-image: url(images/pexels-brenda-lelis-2899746.jpg);
 }
-
-.item11 {
+.cont-portfolio .item11 {
   grid-area: item11;
   background-image: url(images/pexels-daniel-duarte-13005188.jpg);
   background-position: top;
 }
-
-.item12 {
+.cont-portfolio .item12 {
   grid-area: item12;
   background-image: url(images/pexels-marcelo-chagas-3335352.jpg);
   background-position: top;
@@ -255,26 +227,18 @@
 
 /*fin de portfolio */
 /*fin formulario*/
-.cont_form {
+.cont-form {
   height: auto;
   width: 100%;
   background-color: rgb(227, 227, 209);
   display: flex;
 }
-
-.form_left {
+.cont-form .form-left {
   height: auto;
   width: 50%;
   background-color: rgb(227, 227, 209);
 }
-
-.form_right {
-  height: auto;
-  width: 60%;
-  background-color: bg-color1;
-}
-
-.cajacontacto {
+.cont-form .form-left .cajacontacto {
   height: auto;
   width: 80%;
   background-color: rgb(227, 227, 209);
@@ -287,8 +251,7 @@
   margin-left: 100px;
   margin-bottom: 80px;
 }
-
-.cajacontacto p {
+.cont-form .form-left .cajacontacto p {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
   font-weight: bold;
@@ -296,8 +259,12 @@
   border: solid 3px rgb(191, 191, 162);
   padding: 30px;
 }
-
-.formulario {
+.cont-form .form-right {
+  height: auto;
+  width: 60%;
+  background-color: bg-color1;
+}
+.cont-form .form-right .formulario {
   height: 95%;
   width: 60%;
   background-color: rgb(244, 244, 234);
@@ -309,12 +276,10 @@
   margin-top: 16px;
   border: 5px double rgb(191, 191, 162);
 }
-
-label {
+.cont-form .form-right .formulario label {
   font-family: "Josefin Slab", serif;
 }
-
-input {
+.cont-form .form-right .formulario input {
   padding: 6px;
   width: 100%;
   font-family: "Josefin Slab", serif;
@@ -322,48 +287,12 @@ input {
   border-bottom: 2px solid rgb(204, 204, 181);
   background: transparent;
 }
-
-input:focus {
-  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-  outline: none;
-}
-
-input::-moz-placeholder {
-  font-family: "Josefin Slab", serif;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
-input::placeholder {
-  font-family: "Josefin Slab", serif;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
-textarea {
+.cont-form .form-right .formulario textarea {
   background-color: rgb(244, 244, 234);
   max-height: 100px;
   resize: none;
 }
-
-textarea:focus {
-  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-  outline: none;
-}
-
-textarea::-moz-placeholder {
-  font-family: "Josefin Slab", serif;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
-textarea::placeholder {
-  font-family: "Josefin Slab", serif;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
-button {
+.cont-form .form-right .formulario button {
   font-size: 15px;
   font-family: "Josefin Slab", serif;
   background-color: rgb(205, 201, 201);
@@ -371,20 +300,45 @@ button {
   border: 2px solid rgb(167, 165, 165);
   margin-left: 80%;
 }
-
-button:hover {
+.cont-form .form-right input:focus {
+  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+  outline: none;
+}
+.cont-form .form-right input::-moz-placeholder {
+  font-family: "Josefin Slab", serif;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
+}
+.cont-form .form-right input::placeholder {
+  font-family: "Josefin Slab", serif;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
+}
+.cont-form .form-right textarea:focus {
+  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+  outline: none;
+}
+.cont-form .form-right textarea::-moz-placeholder {
+  font-family: "Josefin Slab", serif;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
+}
+.cont-form .form-right textarea::placeholder {
+  font-family: "Josefin Slab", serif;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
+}
+.cont-form .form-right button:hover {
   background-color: rgb(172, 172, 172);
 }
 
-/*fin de mi formulario*/
 /*inicio de mi contacto */
-.cont_micontacto {
+.cont-micontacto {
   height: 550px;
   width: 100%;
   background-color: rgb(227, 227, 209);
 }
-
-.cont_micontacto h2 {
+.cont-micontacto h2 {
   text-align: center;
   display: inline-block;
   color: rgb(92, 92, 92);
@@ -400,7 +354,6 @@ button:hover {
   animation-iteration-count: infinite;
   animation-duration: 5s;
 }
-
 @keyframes efecto {
   from {
     background-color: rgb(227, 227, 209);
@@ -409,7 +362,7 @@ button:hover {
     background-color: rgb(205, 205, 187);
   }
 }
-.cajas {
+.cont-micontacto .cajas {
   display: flex;
   justify-content: space-evenly;
   color: rgb(92, 92, 92);
@@ -419,20 +372,17 @@ button:hover {
   background-color: rgb(227, 227, 209);
   margin-top: 5%;
 }
-
-.caja1, .caja3, .caja2 {
+.cont-micontacto .cajas .caja1, .cont-micontacto .cajas .caja3, .cont-micontacto .cajas .caja2 {
   width: 180px;
   height: 180px;
   padding: 20px;
   border: 3px solid rgb(195, 195, 175);
 }
-
-.caja:hover {
+.cont-micontacto .cajas .caja1:hover, .cont-micontacto .cajas .caja2:hover, .cont-micontacto .cajas .caja3:hover {
   transform: scale(1.2);
   transition: all 2.5s;
 }
-
-.cajas h3 {
+.cont-micontacto .cajas h3 {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
   background: none;
@@ -440,8 +390,7 @@ button:hover {
   font-weight: bold;
   padding: 15px;
 }
-
-.cajas i {
+.cont-micontacto .cajas i {
   color: rgb(92, 92, 92);
   background-color: rgb(227, 227, 209);
 }
@@ -459,20 +408,26 @@ footer .redes i {
   color: rgb(160, 160, 134);
   letter-spacing: 20px;
 }
-
-.redes i:hover {
+footer .redes i:hover {
   color: rgb(189, 189, 189);
   transform: scale(1.2);
-  transition: all 0.9s;
+  transition: all 1s;
 }
-
-h4 {
-  color: rgb(92, 92, 92);
+footer h4 {
+  color: rgb(160, 160, 134);
   font-size: 15px;
+  padding: 10px;
 }
 
 /*fin footer*/
 @media only screen and (max-width: 990px) {
+  .logo {
+    width: 80%;
+    font-size: 20px;
+  }
+  .sec {
+    font-size: 16px;
+  }
   .nav-link {
     font-size: 13px;
   }
@@ -482,7 +437,7 @@ h4 {
   .right {
     width: 100%;
   }
-  .cont_inicio {
+  .cont-inicio {
     display: inline-block;
   }
   .call {
@@ -490,7 +445,7 @@ h4 {
     width: 100%;
     padding: 10px;
   }
-  .hola {
+  .hola, .call {
     font-size: 20px;
   }
   .right p {
@@ -504,7 +459,7 @@ h4 {
     padding: 15px;
     margin-top: 150px;
   }
-  .call .hola {
+  .call .hola, .call .call {
     font-size: 25px;
   }
   .call p {
@@ -604,7 +559,7 @@ h4 {
   .cont h2 {
     margin-left: 25%;
   }
-  .caja1,
+  .caja1, .cont-micontacto .cajas .caja2, .cont-micontacto .cajas .caja3,
   .caja2,
   .caja3 {
     width: 150px;
@@ -631,7 +586,7 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
-  .caja1, .caja2, .caja3 {
+  .caja1, .cont-micontacto .cajas .caja2, .cont-micontacto .cajas .caja3, .caja2, .caja3 {
     width: 150px;
     height: 150px;
     padding: 0;

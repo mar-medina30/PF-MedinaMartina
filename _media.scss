@@ -1,4 +1,13 @@
+
 @media only screen and (max-width: 990px) {
+  .logo{
+    width: 80%;
+    font-size: 20px;
+  }
+  .sec{
+    font-size: 16px;
+  }
+
   .nav-link {
     font-size: 13px;
   }
@@ -9,7 +18,7 @@
   .right {
     width: 100%;
   }
-  .cont_inicio {
+  .cont-inicio {
     display: inline-block;
   }
 
@@ -30,6 +39,7 @@
 }
 
 @media only screen and (min-width: 990px) and (max-width: 1900px) {
+  
   .call {
     width: 90%;
     padding: 15px;
@@ -223,3 +233,4 @@
     margin-right: 28%;
   }
 }
+

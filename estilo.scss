@@ -24,43 +24,43 @@ $color-font: rgb(92, 92, 92);
   background-image: linear-gradient(to bottom, #dcdcba, #e2e2c6, #e8e8d2, #eeeede, #f4f4ea);
   display: flex;
   justify-content: space-evenly;
-}
 
-.logo {
-  color: black;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
-  padding: 10px;
-}
+  .logo {
+    color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    padding: 10px;
+  }
 
-.navbar-collapse {
-  display: flex;
-  justify-content: center;
-}
+  .navbar-toggler i {
+    color: black;
+    border: none;
+  }
 
-.nav-link {
-  color: black !important;
-  font-family: "Cormorant Garamond", serif;;
-  font-size: 14px;
-  width: 100px;
-  text-align: center;
-}
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
 
-.nav-link:hover {
-  transform: scale(1.3);
-  transition: all 0.9s;
-}
+  .navbar-nav li {
+    margin: auto;
+    margin-left: 5%;
 
-.navbar-nav li {
-  margin: auto;
-  margin-left: 5%;
-}
+    
+    .nav-link {
+      color: black !important;
+      font-family: "Cormorant Garamond", serif;;
+      font-size: 14px;
+      width: 100px;
+      text-align: center;
+    }
 
-.navbar-toggler i {
-  color: black;
-  border: none;
+    .nav-link:hover {
+      transform: scale(1.3);
+      transition: all 1.2s;
+    }
+  }
 }
-
 /*fin de header*/
 
 .sec {
@@ -75,7 +75,7 @@ $color-font: rgb(92, 92, 92);
 }
 
 /*inicio de inicio*/
-.cont_inicio {
+.cont-inicio {
   @include sizes (auto, 100%, $bg-color1);
   display: flex;
 }
@@ -99,9 +99,9 @@ $color-font: rgb(92, 92, 92);
   margin: auto;
   margin-top: 55px;
   background-color: $bg-color1;
+  @extend .hola;
 }
 
-.call,
 .hola {
   color: $color-font;
   font-family: $font1;
@@ -121,57 +121,58 @@ $color-font: rgb(92, 92, 92);
   margin-bottom: 20px;
   background-color: $bg-color1;
 }
+
 /*fin de inicio*/
 
 /*inicio de sobre mí*/
 .cont {
   @include sizes (100%, 100%, $bg-color1);
-}
 
-.container{
-  background-color: $bg-color2;
-  border: solid 30px $bg-color1;
-}
+  .cont-misfotos{
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color1;
 
-.cont_misfotos{
-  display: flex;
-  justify-content: center;
-  background-color: $bg-color1;
-}
+    .foto {
+      @include sizes (200px, 200px, $bg-color1);
+      margin: 20px;
+    }
 
-.foto {
-  @include sizes (200px, 200px, $bg-color1);
-  margin: 20px;
-}
+    .foto1 {
+      background-image: url(images/pexels-allec-gomes-4016854.jpg);
+      background-size: cover;
+    }
+    
+    .foto2 {
+      background-image: url(images/mifoto.jpg);
+      background-size: cover;
+      background-position: bottom;
+    }
+    
+    .foto3 {
+      background-image: url(images/pexels-harrison-haines-3800848.jpg);
+      background-size: cover;
+    }
+  }
 
-.foto1 {
-  background-image: url(images/pexels-allec-gomes-4016854.jpg);
-  background-size: cover;
-}
-
-.foto2 {
-  background-image: url(images/mifoto.jpg);
-  background-size: cover;
-  background-position: bottom;
-}
-
-.foto3 {
-  background-image: url(images/pexels-harrison-haines-3800848.jpg);
-  background-size: cover;
-}
-
-.info {
-  font-family: $font1;
-  font-size: 20px;
-  color: $color-font;
-  font-weight: bold;
-  margin-top: 5%;
+  .container{
+    background-color: $bg-color2;
+    border: solid 30px $bg-color1;
+  
+    .info {
+      font-family: $font1;
+      font-size: 20px;
+      color: $color-font;
+      font-weight: bold;
+      margin-top: 5%;
+    }
+  }
 }
 
 /*fin de sobre mí*/
 
 /*inicio de portfolio*/
-.cont_portfolio {
+.cont-portfolio {
   @include sizes (auto, 100%, $bg-color1);
   padding: 20px;
   margin: 0;
@@ -185,260 +186,256 @@ $color-font: rgb(92, 92, 92);
     "item6 item10 item10 item8"
     "item9 item9 item12 item11";
   grid-gap: 5px;
-}
 
-.item {
-  background-image: url(images/pexels-ali-pazani-3374436.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: $bg-color1;
-}
-
-.item1 {
-  grid-area: item1;
-  background-image: url(images/pexels-sasha-kim-8484060.jpg);
-  background-position: top;
-}
-
-.item2 {
-  grid-area: item2;
-  background-image: url(images/pexels-catalina-carvajal-herrera-5992078.jpg);
-}
-
-.item3 {
-  grid-area: item3;
-  background-image: url(images/pexels-ali-pazani-3374436.jpg);
-}
-
-.item4 {
-  grid-area: item4;
-  background-image: url(images/pexels-andrea-piacquadio-839011.jpg);
-  background-position: center;
-}
-
-.item5 {
-  grid-area: item5;
-  background-image: url(images/pexels-ulises-peña-12281201\ \(1\).jpg);
-}
-
-.item6 {
-  grid-area: item6;
-  background-image: url(images/pexels-scott-foltz-12162376.jpg);
-}
-
-.item7 {
-  grid-area: item7;
-  background-image: url(images/pexels-heitor-verdi-2529459.jpg);
-}
-
-.item8 {
-  grid-area: item8;
-  background-image: url(images/pexels-cxpturing-souls-3014808.jpg);
-  background-position: top;
-}
-
-.item9 {
-  grid-area: item9;
-  background-image: url(images/pexels-sasha-kim-8484058.jpg);
-}
-
-.item10 {
-  grid-area: item10;
-  background-image: url(images/pexels-brenda-lelis-2899746.jpg);
-}
-
-.item11 {
-  grid-area: item11;
-  background-image: url(images/pexels-daniel-duarte-13005188.jpg);
-  background-position: top;
-}
-
-.item12 {
-  grid-area: item12;
-  background-image: url(images/pexels-marcelo-chagas-3335352.jpg);
-  background-position: top;
-}
-
-/*fin de portfolio */
-
-/*fin formulario*/
-.cont_form {
-  @include sizes (auto, 100%, $bg-color1);
-  display: flex;
-}
-
-.form_left {
-  @include sizes (auto, 50%, $bg-color1)
-}
-
-
-.form_right {
-  @include sizes (auto, 60%, bg-color1)
-}
-
-.cajacontacto {
-  @include sizes (auto, 80%, $bg-color1);
-  color: $color-font;
-  text-align: center;
-  font-size: 25px;
-  padding: 40px;
-  margin: auto;
-  margin-top: 80px;
-  margin-left: 100px;
-  margin-bottom: 80px;
-}
-
-.cajacontacto p {
-  color: $color-font;
-  font-family: $font1;
-  font-weight: bold;
-  background-color: $bg-color1;
-  border: solid 3px rgb(191, 191, 162);
-  padding: 30px;
-}
-
-.formulario {
-  @include sizes (95%, 60%, $bg-color2);
-  display: block;
-  color: $color-font;
-  font-size: 20px;
-  padding: 40px;
-  margin: auto;
-  margin-top: 16px;
-  border: 5px double rgb(191, 191, 162);
-}
-
-label {
-  font-family: $font1;
-}
-
-input {
-  padding: 6px;
-  width: 100%;
-  font-family: $font1;
-  border: none;
-  border-bottom: 2px solid rgb(204, 204, 181);
-  background: transparent;
-}
-
-input:focus{
-  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-  outline: none;
-}
-
-input::placeholder {
-  font-family: $font1;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-textarea {
-  background-color: $bg-color2;
-  max-height: 100px;
-  resize: none;
-}
-
-textarea:focus{
-  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-  outline: none;
-}
-
-textarea::placeholder {
-  font-family: $font1;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
-button {
-  font-size: 15px;
-  font-family: $font1;
-  background-color: rgb(205, 201, 201);
-  padding: 5px;
-  border: 2px solid rgb(167, 165, 165);
-  margin-left: 80%;
-}
-
-button:hover {
-  background-color: rgb(172, 172, 172);
-}
-/*fin de mi formulario*/
-
-/*inicio de mi contacto */
-.cont_micontacto {
-  @include sizes (550px, 100%, $bg-color1);
-}
-
-.cont_micontacto h2 {
-  text-align: center;
-  display: inline-block;
-  color: $color-font;
-  font-family: $font1;
-  font-size: 30px;
-  font-weight: bolder;
-  background-color: $bg-color1;
-  padding: 20px;
-  border: solid 3px rgb(191, 191, 162);
-  margin-left: 28%;
-  margin-top: 5%;
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-}
-
-@keyframes efecto {
-  from{
+  .item {
+    background-size: cover;
+    background-position: center;
     background-color: $bg-color1;
   }
 
-  to{
-    background-color: rgb(205, 205, 187);
+  .item1 {
+    grid-area: item1;
+    background-image: url(images/pexels-sasha-kim-8484060.jpg);
+    background-position: top;
+  }
+  
+  .item2 {
+    grid-area: item2;
+    background-image: url(images/pexels-catalina-carvajal-herrera-5992078.jpg);
+  }
+  
+  .item3 {
+    grid-area: item3;
+    background-image: url(images/pexels-ali-pazani-3374436.jpg);
+  }
+  
+  .item4 {
+    grid-area: item4;
+    background-image: url(images/pexels-andrea-piacquadio-839011.jpg);
+    background-position: center;
+  }
+  
+  .item5 {
+    grid-area: item5;
+    background-image: url(images/pexels-ulises-peña-12281201\ \(1\).jpg);
+  }
+  
+  .item6 {
+    grid-area: item6;
+    background-image: url(images/pexels-scott-foltz-12162376.jpg);
+  }
+  
+  .item7 {
+    grid-area: item7;
+    background-image: url(images/pexels-heitor-verdi-2529459.jpg);
+  }
+  
+  .item8 {
+    grid-area: item8;
+    background-image: url(images/pexels-cxpturing-souls-3014808.jpg);
+    background-position: top;
+  }
+  
+  .item9 {
+    grid-area: item9;
+    background-image: url(images/pexels-sasha-kim-8484058.jpg);
+  }
+  
+  .item10 {
+    grid-area: item10;
+    background-image: url(images/pexels-brenda-lelis-2899746.jpg);
+  }
+  
+  .item11 {
+    grid-area: item11;
+    background-image: url(images/pexels-daniel-duarte-13005188.jpg);
+    background-position: top;
+  }
+  
+  .item12 {
+    grid-area: item12;
+    background-image: url(images/pexels-marcelo-chagas-3335352.jpg);
+    background-position: top;
+  }
+}
+/*fin de portfolio */
+
+/*fin formulario*/
+.cont-form {
+  @include sizes (auto, 100%, $bg-color1);
+  display: flex;
+
+  .form-left {
+    @include sizes (auto, 50%, $bg-color1);
+
+    .cajacontacto {
+      @include sizes (auto, 80%, $bg-color1);
+      color: $color-font;
+      text-align: center;
+      font-size: 25px;
+      padding: 40px;
+      margin: auto;
+      margin-top: 80px;
+      margin-left: 100px;
+      margin-bottom: 80px;
+
+      p {
+        color: $color-font;
+        font-family: $font1;
+        font-weight: bold;
+        background-color: $bg-color1;
+        border: solid 3px rgb(191, 191, 162);
+        padding: 30px;
+      }
+    }
+  }
+
+  .form-right {
+    @include sizes (auto, 60%, bg-color1);
+
+    .formulario {
+      @include sizes (95%, 60%, $bg-color2);
+      display: block;
+      color: $color-font;
+      font-size: 20px;
+      padding: 40px;
+      margin: auto;
+      margin-top: 16px;
+      border: 5px double rgb(191, 191, 162);
+
+      label {
+        font-family: $font1;
+      }
+
+      input {
+        padding: 6px;
+        width: 100%;
+        font-family: $font1;
+        border: none;
+        border-bottom: 2px solid rgb(204, 204, 181);
+        background: transparent;
+      }
+
+      textarea {
+        background-color: $bg-color2;
+        max-height: 100px;
+        resize: none;
+      }
+
+      button {
+        font-size: 15px;
+        font-family: $font1;
+        background-color: rgb(205, 201, 201);
+        padding: 5px;
+        border: 2px solid rgb(167, 165, 165);
+        margin-left: 80%;
+      }
+    }
+
+    input:focus{
+      background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+      outline: none;
+    }
+    
+    input::placeholder {
+      font-family: $font1;
+      color: rgb(123, 121, 121);
+      font-size: 20px;
+    }
+    
+    textarea:focus{
+      background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+      outline: none;
+    }
+    
+    textarea::placeholder {
+      font-family: $font1;
+      color: rgb(123, 121, 121);
+      font-size: 20px;
+    }
+    
+    button:hover {
+      background-color: rgb(172, 172, 172);
+    }
+  }
+}
+/*inicio de mi contacto */
+.cont-micontacto {
+  @include sizes (550px, 100%, $bg-color1);
+
+  h2 {
+    text-align: center;
+    display: inline-block;
+    color: $color-font;
+    font-family: $font1;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: $bg-color1;
+    padding: 20px;
+    border: solid 3px rgb(191, 191, 162);
+    margin-left: 28%;
+    margin-top: 5%;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+  }
+
+  @keyframes efecto {
+    from{
+      background-color: $bg-color1;
+    }
+  
+    to{
+      background-color: rgb(205, 205, 187);
+    }
+  }
+
+  .cajas {
+    display: flex;
+    justify-content: space-evenly;
+    color: $color-font;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    font-size: 50px;
+    background-color:$bg-color1;
+    margin-top: 5%;
+
+    .caja1 {
+      width: 180px;
+      height: 180px;
+      padding: 20px;
+      border: 3px solid  rgb(195, 195, 175);
+    }
+
+    .caja2{
+      @extend .caja1;
+    }
+
+    .caja3{
+      @extend .caja1;
+    }
+
+    .caja1:hover {
+      transform: scale(1.20);
+      transition: all 2.5s;
+    }
+
+    h3 {
+      color: $color-font;
+      font-family: $font1;
+      background: none;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 15px;
+    }
+
+    i {
+      color: $color-font;
+      background-color:  $bg-color1;
+    }
   }
 }
 
-
-.cajas {
-  display: flex;
-  justify-content: space-evenly;
-  color: $color-font;
-  font-family: "Cinzel", serif;
-  text-align: center;
-  font-size: 50px;
-  background-color:$bg-color1;
-  margin-top: 5%;
-}
-
-.caja1 {
-  width: 180px;
-  height: 180px;
-  padding: 20px;
-  border: 3px solid  rgb(195, 195, 175);
-}
-
-.caja2{
-  @extend .caja1;
-}
-
-.caja3{
-  @extend .caja1;
-}
-
-.caja:hover {
-  transform: scale(1.20);
-  transition: all 2.5s;
-}
-
-.cajas h3 {
-  color: $color-font;
-  font-family: $font1;
-  background: none;
-  font-size: 25px;
-  font-weight: bold;
-  padding: 15px;
-}
-
-.cajas i {
-  color: $color-font;
-  background-color:  $bg-color1;
-}
 
 /*inicio de mi contacto */
 
@@ -451,20 +448,21 @@ footer {
   border: 2px solid $bg-color1;
 
   .redes i {
-  color: rgb(160, 160, 134);
-  letter-spacing: 20px;
+    color: rgb(160, 160, 134);
+    letter-spacing: 20px;
   }
-}
 
-.redes i:hover {
-  color: rgb(189, 189, 189);
-  transform: scale(1.20);
-  transition: all 0.9s;
-}
+  .redes i:hover {
+    color: rgb(189, 189, 189);
+    transform: scale(1.20);
+    transition: all 1s;
+  }
 
-h4{
-  color: $color-font;
-  font-size: 15px;
+  h4{
+    color: rgb(160, 160, 134);
+    font-size: 15px;
+    padding: 10px;
+  }
 }
 /*fin footer*/
 
