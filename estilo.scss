@@ -6,6 +6,7 @@ $bg-color1: rgb(227, 227, 209);
 $bg-color2: rgb(244, 244, 234);
 $font1: "Josefin Slab", serif;
 $color-font: rgb(92, 92, 92);
+$border-color: rgb(212, 212, 195);
 
 @mixin sizes ($height, $width, $bg-color){
   height: $height;
@@ -93,11 +94,11 @@ $color-font: rgb(92, 92, 92);
 }
 
 .call {
-  max-width: 70%;
+  max-width: 90%;
   padding: 40px;
-  border: 5px solid rgb(200, 200, 178);
+  border: 5px solid $border-color;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 40px;
   background-color: $bg-color1;
   @extend .hola;
 }
@@ -120,6 +121,7 @@ $color-font: rgb(92, 92, 92);
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: $bg-color1;
+  border: none;
 }
 
 /*fin de inicio*/
@@ -136,6 +138,7 @@ $color-font: rgb(92, 92, 92);
     .foto {
       @include sizes (200px, 200px, $bg-color1);
       margin: 20px;
+      margin-top: 40px;
     }
 
     .foto1 {
@@ -156,7 +159,7 @@ $color-font: rgb(92, 92, 92);
   }
 
   .container{
-    background-color: $bg-color2;
+    background-color: $bg-color1;
     border: solid 30px $bg-color1;
   
     .info {
@@ -165,6 +168,7 @@ $color-font: rgb(92, 92, 92);
       color: $color-font;
       font-weight: bold;
       margin-top: 5%;
+      border: solid 3px $border-color;
     }
   }
 }
@@ -264,101 +268,106 @@ $color-font: rgb(92, 92, 92);
 .cont-form {
   @include sizes (auto, 100%, $bg-color1);
   display: flex;
-
-  .form-left {
-    @include sizes (auto, 50%, $bg-color1);
-
-    .cajacontacto {
-      @include sizes (auto, 80%, $bg-color1);
-      color: $color-font;
-      text-align: center;
-      font-size: 25px;
-      padding: 40px;
-      margin: auto;
-      margin-top: 80px;
-      margin-left: 100px;
-      margin-bottom: 80px;
-
-      p {
-        color: $color-font;
-        font-family: $font1;
-        font-weight: bold;
-        background-color: $bg-color1;
-        border: solid 3px rgb(191, 191, 162);
-        padding: 30px;
-      }
-    }
-  }
-
-  .form-right {
-    @include sizes (auto, 60%, bg-color1);
-
-    .formulario {
-      @include sizes (95%, 60%, $bg-color2);
-      display: block;
-      color: $color-font;
-      font-size: 20px;
-      padding: 40px;
-      margin: auto;
-      margin-top: 16px;
-      border: 5px double rgb(191, 191, 162);
-
-      label {
-        font-family: $font1;
-      }
-
-      input {
-        padding: 6px;
-        width: 100%;
-        font-family: $font1;
-        border: none;
-        border-bottom: 2px solid rgb(204, 204, 181);
-        background: transparent;
-      }
-
-      textarea {
-        background-color: $bg-color2;
-        max-height: 100px;
-        resize: none;
-      }
-
-      button {
-        font-size: 15px;
-        font-family: $font1;
-        background-color: rgb(205, 201, 201);
-        padding: 5px;
-        border: 2px solid rgb(167, 165, 165);
-        margin-left: 80%;
-      }
-    }
-
-    input:focus{
-      background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-      outline: none;
-    }
-    
-    input::placeholder {
-      font-family: $font1;
-      color: rgb(123, 121, 121);
-      font-size: 20px;
-    }
-    
-    textarea:focus{
-      background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-      outline: none;
-    }
-    
-    textarea::placeholder {
-      font-family: $font1;
-      color: rgb(123, 121, 121);
-      font-size: 20px;
-    }
-    
-    button:hover {
-      background-color: rgb(172, 172, 172);
-    }
-  }
 }
+
+.formulario {
+  @include sizes (95%, 60%, $bg-color2);
+  display: block;
+  color: $color-font;
+  font-size: 20px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 16px;
+  border: 3px solid rgb(212, 212, 195);
+}
+
+.form-left {
+  @include sizes (auto, 50%, $bg-color1);
+}
+
+.cajacontacto {
+  @include sizes (auto, 80%, $bg-color1);
+  color: $color-font;
+  text-align: center;
+  font-size: 25px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+
+p {
+  color: $color-font;
+  font-family: $font1;
+  font-weight: bold;
+  background-color: $bg-color1;
+  border: solid 3px rgb(212, 212, 195);
+  padding: 30px;
+}
+
+.form-right {
+  @include sizes (auto, 50%, bg-color1);
+ } 
+  
+
+label {
+  font-family: $font1;
+}
+
+input {
+  padding: 6px;
+  width: 100%;
+  font-family: $font1;
+  border: none;
+  border-bottom: 2px solid rgb(204, 204, 181);
+  background: transparent;
+}
+    
+input:focus{
+  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+  outline: none;
+}
+    
+input::placeholder {
+  font-family: $font1;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
+}
+    
+textarea {
+  width: 98%;
+  background-color: $bg-color2;
+  max-height: 100px;
+  resize: none;
+  border: 2px solid rgb(204, 204, 181);
+}
+
+textarea:focus{
+  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
+  outline: none;
+}
+    
+textarea::placeholder {
+  font-family: $font1;
+  color: rgb(123, 121, 121);
+  font-size: 20px;
+}
+    
+button {
+  font-size: 15px;
+  font-family: $font1;
+  background-color: rgb(205, 201, 201);
+  padding: 5px;
+  border: 2px solid $bg-color1;
+  margin-left: 80%;
+}
+
+button:hover {
+  background-color: rgb(172, 172, 172);
+}
+  
+
 /*inicio de mi contacto */
 .cont-micontacto {
   @include sizes (550px, 100%, $bg-color1);
@@ -372,7 +381,7 @@ $color-font: rgb(92, 92, 92);
     font-weight: bolder;
     background-color: $bg-color1;
     padding: 20px;
-    border: solid 3px rgb(191, 191, 162);
+    border: solid 3px $border-color;
     margin-left: 28%;
     margin-top: 5%;
     animation-name: efecto;
@@ -386,7 +395,7 @@ $color-font: rgb(92, 92, 92);
     }
   
     to{
-      background-color: rgb(205, 205, 187);
+      background-color: $border-color;
     }
   }
 
@@ -400,24 +409,20 @@ $color-font: rgb(92, 92, 92);
     background-color:$bg-color1;
     margin-top: 5%;
 
-    .caja1 {
+    .caja1, .caja2, .caja3 {
       width: 180px;
       height: 180px;
       padding: 20px;
-      border: 3px solid  rgb(195, 195, 175);
-    }
-
-    .caja2{
-      @extend .caja1;
-    }
-
-    .caja3{
-      @extend .caja1;
+      border: 3px solid  $border-color;
     }
 
     .caja1:hover {
       transform: scale(1.20);
       transition: all 2.5s;
+    }
+
+    .caja2:hover, .caja3:hover{
+      @extend .caja1;
     }
 
     h3 {
@@ -435,7 +440,6 @@ $color-font: rgb(92, 92, 92);
     }
   }
 }
-
 
 /*inicio de mi contacto */
 
