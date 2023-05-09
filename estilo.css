@@ -181,7 +181,7 @@
 }
 .cont-portfolio .item2 {
   grid-area: item2;
-  background-image: url(images/pexels-catalina-carvajal-herrera-5992078.jpg);
+  background-image: url(images/pexels-catalina-carvajal-herrera.jpg);
 }
 .cont-portfolio .item3 {
   grid-area: item3;
@@ -194,7 +194,8 @@
 }
 .cont-portfolio .item5 {
   grid-area: item5;
-  background-image: url(images/pexels-ulises-peña-12281201\ \(1\).jpg);
+  background-image: url(images/pexels-ulises-pe+-ªa-12281201.jpg);
+  background-position: top;
 }
 .cont-portfolio .item6 {
   grid-area: item6;
@@ -202,11 +203,11 @@
 }
 .cont-portfolio .item7 {
   grid-area: item7;
-  background-image: url(images/pexels-heitor-verdi-2529459.jpg);
+  background-image: url(images/pexels-heitor-verdi-2529459\ .jpg);
 }
 .cont-portfolio .item8 {
   grid-area: item8;
-  background-image: url(images/pexels-cxpturing-souls-3014808.jpg);
+  background-image: url(images/pexels-cxpturing-souls-3014808\ .jpg);
   background-position: top;
 }
 .cont-portfolio .item9 {
@@ -215,7 +216,7 @@
 }
 .cont-portfolio .item10 {
   grid-area: item10;
-  background-image: url(images/pexels-brenda-lelis-2899746.jpg);
+  background-image: url(images/pexels-brenda-lelis-2899746\ .jpg);
 }
 .cont-portfolio .item11 {
   grid-area: item11;
@@ -638,4 +639,4 @@ footer h4 {
     padding: 20px;
     margin-right: 28%;
   }
-}
+}/*# sourceMappingURL=estilo.css.map */
