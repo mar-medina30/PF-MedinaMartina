@@ -26,7 +26,8 @@ $border-color: rgb(212, 212, 195);
   display: flex;
   justify-content: space-evenly;
 
-  .logo {
+  .logo a {
+    text-decoration: none;
     color: black;
     font-family: "Cormorant Garamond", serif;
     font-size: 25px;
