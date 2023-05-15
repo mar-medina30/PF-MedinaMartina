@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 320px) and (max-width: 990px) {
   .logo {
     width: 80%;
@@ -9,12 +8,14 @@
     font-size: 20px;
     margin-left: 10px;
   }
-  .sec{
+
+  .sec {
     font-size: 16px;
   }
 
   .nav-link {
-    font-size: 13px;
+    font-size: 14px;
+    margin-left: 34%;
   }
 
   .left {
@@ -44,7 +45,6 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 990px) {
-  
   .call {
     max-width: 80%;
     padding: 10px;
@@ -59,7 +59,6 @@
 }
 
 @media only screen and (min-width: 990px) and (max-width: 1350px) {
-  
   .call {
     width: 90%;
     padding: 15px;
@@ -74,26 +73,7 @@
   }
 }
 
-@media only screen and (max-width: 390px){
-  .foto {
-    height: 90px;
-    width: 90px;
-    margin: 10px;
-  }
-
-  .info {
-    font-size: 15px;
-  }
-}
-
 @media only screen and (min-width: 390px) and (max-width: 660px) {
-
-  .foto {
-    height: 150px;
-    width: 150px;
-    margin: 5px;
-  }
-
   .info {
     font-size: 15px;
   }
@@ -195,64 +175,10 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1210px) {
-  .cont-micontacto h2 {
-    width: 48%;
-    margin-left: 28%;
-  }
-
-  .caja1,
-  .caja2,
-  .caja3 {
-    width: 150px;
-    height: 150px;
-    padding: 0;
-  }
-
-  .cajas h3 {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  .cont-micontacto h2 {
-    width: 90%;
-    margin-left: 5%;
-    font-size: 25px;
-    padding: 10px;
-  }
-
   .cajas {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .caja1, .caja2, .caja3 {
-    width: 150px;
-    height: 150px;
-    padding: 0;
-    margin: 10px;
-  }
-  
-  .cont-micontacto h3 {
-    font-size: 20px;
-    padding: 10px;
-  }
-
-  
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1210px) {
-  .cont-micontacto h2 {
-    padding: 20px;
-    margin-right: 28%;
-  }
-}
-
-@media only screen and (min-width: 500px) {
-  .carrusel{
-    width: 40%;
   }
 }

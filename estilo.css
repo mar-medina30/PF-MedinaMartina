@@ -10,7 +10,14 @@
 
 /*inicio de header*/
 .navbar {
-  background-image: linear-gradient(to bottom, #dcdcba, #e2e2c6, #e8e8d2, #eeeede, #f4f4ea);
+  background-image: linear-gradient(
+    to bottom,
+    #dcdcba,
+    #e2e2c6,
+    #e8e8d2,
+    #eeeede,
+    #f4f4ea
+  );
   display: flex;
   justify-content: space-evenly;
 }
@@ -25,13 +32,8 @@
   color: black;
   border: none;
 }
-.navbar .navbar-collapse {
-  display: flex;
-  justify-content: center;
-}
 .navbar .navbar-nav li {
-  margin: auto;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 .navbar .navbar-nav li .nav-link {
   color: black !important;
@@ -90,7 +92,8 @@
   background-color: rgb(227, 227, 209);
 }
 
-.hola, .call {
+.hola,
+.call {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
   font-weight: bold;
@@ -119,9 +122,9 @@
   background-color: rgb(227, 227, 209);
 }
 .cont .carrusel {
-  width: 30%;
+  width: 315px;
   padding-top: 45px;
-  margin-left: 35%;
+  margin: auto;
 }
 .cont .carrusel ol li {
   height: 15px;
@@ -304,7 +307,7 @@ input::placeholder {
 
 textarea {
   width: 98%;
-  background-color: rgb(244, 244, 234);
+  background-color: rgb(227, 227, 209);
   max-height: 100px;
   resize: none;
   border: 2px solid rgb(204, 204, 181);
@@ -348,16 +351,17 @@ textarea::placeholder {
   background-color: rgb(227, 227, 209);
 }
 .cont-micontacto h2 {
+  width: 90%;
   text-align: center;
   display: inline-block;
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   background-color: rgb(227, 227, 209);
   padding: 20px;
   border: solid 3px rgb(212, 212, 195);
-  margin-left: 28%;
+  margin-left: 5%;
   margin-top: 5%;
   animation-name: efecto;
   animation-iteration-count: infinite;
@@ -381,13 +385,17 @@ textarea::placeholder {
   background-color: rgb(227, 227, 209);
   margin-top: 5%;
 }
-.cont-micontacto .cajas .caja1, .cont-micontacto .cajas .caja2:hover, .cont-micontacto .cajas .caja3:hover, .cont-micontacto .cajas .caja2, .cont-micontacto .cajas .caja3 {
+.cont-micontacto .cajas .caja1,
+.cont-micontacto .cajas .caja2,
+.cont-micontacto .cajas .caja3 {
   width: 180px;
   height: 180px;
   padding: 20px;
   border: 3px solid rgb(212, 212, 195);
 }
-.cont-micontacto .cajas .caja1:hover, .cont-micontacto .cajas .caja2:hover, .cont-micontacto .cajas .caja3:hover {
+.cont-micontacto .cajas .caja1:hover,
+.cont-micontacto .cajas .caja2:hover,
+.cont-micontacto .cajas .caja3:hover {
   transform: scale(1.2);
   transition: all 2.5s;
 }
@@ -404,10 +412,17 @@ textarea::placeholder {
   background-color: rgb(227, 227, 209);
 }
 
-/*inicio de mi contacto */
+/*Fin de mi contacto */
 /*inicio footer*/
 footer {
-  background-image: linear-gradient(to top, #c2c2ac, #cecebb, #dbdbcb, #e7e7da, #f4f4ea);
+  background-image: linear-gradient(
+    to top,
+    #c2c2ac,
+    #cecebb,
+    #dbdbcb,
+    #e7e7da,
+    #f4f4ea
+  );
   font-size: 40px;
   text-align: center;
   padding: 20px;
@@ -442,7 +457,8 @@ footer .copy {
     font-size: 16px;
   }
   .nav-link {
-    font-size: 13px;
+    font-size: 14px;
+    margin-left: 34%;
   }
   .left {
     width: 100%;
@@ -458,7 +474,8 @@ footer .copy {
     width: 100%;
     padding: 10px;
   }
-  .hola, .call {
+  .hola,
+  .call {
     font-size: 20px;
   }
   .right p {
@@ -472,7 +489,8 @@ footer .copy {
     padding: 10px;
     margin-top: 10%;
   }
-  .call .hola, .call .call {
+  .call .hola,
+  .call .call {
     font-size: 20px;
   }
   .call p {
@@ -485,29 +503,15 @@ footer .copy {
     padding: 15px;
     margin-top: 50px;
   }
-  .call .hola, .call .call {
+  .call .hola,
+  .call .call {
     font-size: 25px;
   }
   .call p {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 390px) {
-  .foto {
-    height: 90px;
-    width: 90px;
-    margin: 10px;
-  }
-  .info {
-    font-size: 15px;
-  }
-}
 @media only screen and (min-width: 390px) and (max-width: 660px) {
-  .foto {
-    height: 150px;
-    width: 150px;
-    margin: 5px;
-  }
   .info {
     font-size: 15px;
   }
@@ -581,54 +585,10 @@ footer .copy {
     width: 100%;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1210px) {
-  .cont-micontacto h2 {
-    width: 48%;
-    margin-left: 28%;
-  }
-  .caja1, .cont-micontacto .cajas .caja2:hover, .cont-micontacto .cajas .caja3:hover,
-  .caja2,
-  .caja3 {
-    width: 150px;
-    height: 150px;
-    padding: 0;
-  }
-  .cajas h3 {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
 @media only screen and (max-width: 600px) {
-  .cont-micontacto h2 {
-    width: 90%;
-    margin-left: 5%;
-    font-size: 25px;
-    padding: 10px;
-  }
   .cajas {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .caja1, .cont-micontacto .cajas .caja2:hover, .cont-micontacto .cajas .caja3:hover, .caja2, .caja3 {
-    width: 150px;
-    height: 150px;
-    padding: 0;
-    margin: 10px;
-  }
-  .cont-micontacto h3 {
-    font-size: 20px;
-    padding: 10px;
-  }
 }
-@media only screen and (min-width: 600px) and (max-width: 1210px) {
-  .cont-micontacto h2 {
-    padding: 20px;
-    margin-right: 28%;
-  }
-}
-@media only screen and (min-width: 500px) {
-  .carrusel {
-    width: 40%;
-  }
-}/*# sourceMappingURL=estilo.css.map */

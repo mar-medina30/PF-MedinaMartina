@@ -8,13 +8,13 @@ $font1: "Josefin Slab", serif;
 $color-font: rgb(92, 92, 92);
 $border-color: rgb(212, 212, 195);
 
-@mixin sizes ($height, $width, $bg-color){
+@mixin sizes($height, $width, $bg-color) {
   height: $height;
   width: $width;
   background-color: $bg-color1;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +22,14 @@ $border-color: rgb(212, 212, 195);
 
 /*inicio de header*/
 .navbar {
-  background-image: linear-gradient(to bottom, #dcdcba, #e2e2c6, #e8e8d2, #eeeede, #f4f4ea);
+  background-image: linear-gradient(
+    to bottom,
+    #dcdcba,
+    #e2e2c6,
+    #e8e8d2,
+    #eeeede,
+    #f4f4ea
+  );
   display: flex;
   justify-content: space-evenly;
 
@@ -39,19 +46,12 @@ $border-color: rgb(212, 212, 195);
     border: none;
   }
 
-  .navbar-collapse {
-    display: flex;
-    justify-content: center;
-  }
-
   .navbar-nav li {
-    margin: auto;
-    margin-left: 5%;
+    margin-left: 8%;
 
-    
     .nav-link {
       color: black !important;
-      font-family: "Cormorant Garamond", serif;;
+      font-family: "Cormorant Garamond", serif;
       font-size: 14px;
       width: 100px;
       text-align: center;
@@ -78,12 +78,12 @@ $border-color: rgb(212, 212, 195);
 
 /*inicio de inicio*/
 .cont-inicio {
-  @include sizes (auto, 100%, $bg-color1);
+  @include sizes(auto, 100%, $bg-color1);
   display: flex;
 }
 
 .left {
-  @include sizes (100vh, 50%, none);
+  @include sizes(100vh, 50%, none);
   background-image: url(images/fotocamara.png);
   background-size: cover;
   background-position: center;
@@ -91,7 +91,7 @@ $border-color: rgb(212, 212, 195);
 }
 
 .right {
-  @include sizes (auto, 50%, $bg-color1);
+  @include sizes(auto, 50%, $bg-color1);
 }
 
 .call {
@@ -129,25 +129,24 @@ $border-color: rgb(212, 212, 195);
 
 /*inicio de sobre mí*/
 .cont {
-  @include sizes (100%, 100%, $bg-color1);
+  @include sizes(100%, 100%, $bg-color1);
 
-  .carrusel{
-    width: 30%;
+  .carrusel {
+    width: 315px;
     padding-top: 45px;
-    margin-left: 35%;
-    
+    margin: auto;
 
-    ol li{
+    ol li {
       height: 15px;
       width: 15px;
       border-radius: 50%;
     }
   }
-  
-  .container{
+
+  .container {
     background-color: $bg-color1;
     border: solid 30px $bg-color1;
-  
+
     .info {
       font-family: $font1;
       font-size: 20px;
@@ -163,7 +162,7 @@ $border-color: rgb(212, 212, 195);
 
 /*inicio de portfolio*/
 .cont-portfolio {
-  @include sizes (auto, 100%, $bg-color1);
+  @include sizes(auto, 100%, $bg-color1);
   padding: 20px;
   margin: 0;
   display: grid;
@@ -188,61 +187,61 @@ $border-color: rgb(212, 212, 195);
     background-image: url(images/pexels-sasha-kim-8484060.jpg);
     background-position: top;
   }
-  
+
   .item2 {
     grid-area: item2;
     background-image: url(images/pexels-catalina-carvajal-herrera.jpg);
   }
-  
+
   .item3 {
     grid-area: item3;
     background-image: url(images/pexels-ali-pazani-3374436.jpg);
   }
-  
+
   .item4 {
     grid-area: item4;
     background-image: url(images/pexels-andrea-piacquadio-839011.jpg);
     background-position: center;
   }
-  
+
   .item5 {
     grid-area: item5;
     background-image: url(images/pexels-ulises-pe+-ªa-12281201.jpg);
     background-position: top;
   }
-  
+
   .item6 {
     grid-area: item6;
     background-image: url(images/pexels-scott-foltz-12162376.jpg);
   }
-  
+
   .item7 {
     grid-area: item7;
     background-image: url(images/pexels-heitor-verdi-2529459\ .jpg);
   }
-  
+
   .item8 {
     grid-area: item8;
     background-image: url(images/pexels-cxpturing-souls-3014808\ .jpg);
     background-position: top;
   }
-  
+
   .item9 {
     grid-area: item9;
     background-image: url(images/pexels-sasha-kim-8484058.jpg);
   }
-  
+
   .item10 {
     grid-area: item10;
     background-image: url(images/pexels-brenda-lelis-2899746\ .jpg);
   }
-  
+
   .item11 {
     grid-area: item11;
     background-image: url(images/pexels-daniel-duarte-13005188.jpg);
     background-position: top;
   }
-  
+
   .item12 {
     grid-area: item12;
     background-image: url(images/pexels-marcelo-chagas-3335352.jpg);
@@ -253,12 +252,12 @@ $border-color: rgb(212, 212, 195);
 
 /*fin formulario*/
 .cont-form {
-  @include sizes (auto, 100%, $bg-color1);
+  @include sizes(auto, 100%, $bg-color1);
   display: flex;
 }
 
 .formulario {
-  @include sizes (95%, 60%, $bg-color2);
+  @include sizes(95%, 60%, $bg-color2);
   display: block;
   color: $color-font;
   font-size: 20px;
@@ -269,11 +268,11 @@ $border-color: rgb(212, 212, 195);
 }
 
 .form-left {
-  @include sizes (auto, 50%, $bg-color1);
+  @include sizes(auto, 50%, $bg-color1);
 }
 
 .cajacontacto {
-  @include sizes (auto, 80%, $bg-color1);
+  @include sizes(auto, 80%, $bg-color1);
   color: $color-font;
   text-align: center;
   font-size: 25px;
@@ -294,9 +293,8 @@ p {
 }
 
 .form-right {
-  @include sizes (auto, 50%, bg-color1);
- } 
-  
+  @include sizes(auto, 50%, bg-color1);
+}
 
 label {
   font-family: $font1;
@@ -310,37 +308,37 @@ input {
   border-bottom: 2px solid rgb(204, 204, 181);
   background: transparent;
 }
-    
-input:focus{
+
+input:focus {
   background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
   outline: none;
 }
-    
+
 input::placeholder {
   font-family: $font1;
   color: rgb(123, 121, 121);
   font-size: 20px;
 }
-    
+
 textarea {
   width: 98%;
-  background-color: $bg-color2;
+  background-color: $bg-color1;
   max-height: 100px;
   resize: none;
   border: 2px solid rgb(204, 204, 181);
 }
 
-textarea:focus{
+textarea:focus {
   background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
   outline: none;
 }
-    
+
 textarea::placeholder {
   font-family: $font1;
   color: rgb(123, 121, 121);
   font-size: 20px;
 }
-    
+
 .enviar {
   font-size: 15px;
   font-family: $font1;
@@ -354,23 +352,23 @@ textarea::placeholder {
   transform: scale(0.9);
   transition: all 1s;
 }
-  
 
 /*inicio de mi contacto */
 .cont-micontacto {
-  @include sizes (100vh, 100%, $bg-color1);
+  @include sizes(100vh, 100%, $bg-color1);
 
   h2 {
+    width: 90%;
     text-align: center;
     display: inline-block;
     color: $color-font;
     font-family: $font1;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
     background-color: $bg-color1;
     padding: 20px;
     border: solid 3px $border-color;
-    margin-left: 28%;
+    margin-left: 5%;
     margin-top: 5%;
     animation-name: efecto;
     animation-iteration-count: infinite;
@@ -378,11 +376,11 @@ textarea::placeholder {
   }
 
   @keyframes efecto {
-    from{
+    from {
       background-color: $bg-color1;
     }
-  
-    to{
+
+    to {
       background-color: $border-color;
     }
   }
@@ -394,22 +392,23 @@ textarea::placeholder {
     font-family: "Cinzel", serif;
     text-align: center;
     font-size: 50px;
-    background-color:$bg-color1;
+    background-color: $bg-color1;
     margin-top: 5%;
 
-    .caja1, .caja2, .caja3 {
+    .caja1 {
       width: 180px;
       height: 180px;
       padding: 20px;
-      border: 3px solid  $border-color;
+      border: 3px solid $border-color;
     }
 
     .caja1:hover {
-      transform: scale(1.20);
+      transform: scale(1.2);
       transition: all 2.5s;
     }
 
-    .caja2:hover, .caja3:hover{
+    .caja2,
+    .caja3 {
       @extend .caja1;
     }
 
@@ -424,16 +423,23 @@ textarea::placeholder {
 
     i {
       color: $color-font;
-      background-color:  $bg-color1;
+      background-color: $bg-color1;
     }
   }
 }
 
-/*inicio de mi contacto */
+/*Fin de mi contacto */
 
 /*inicio footer*/
 footer {
-  background-image: linear-gradient(to top, #c2c2ac, #cecebb, #dbdbcb, #e7e7da, #f4f4ea);
+  background-image: linear-gradient(
+    to top,
+    #c2c2ac,
+    #cecebb,
+    #dbdbcb,
+    #e7e7da,
+    #f4f4ea
+  );
   font-size: 40px;
   text-align: center;
   padding: 20px;
@@ -446,7 +452,7 @@ footer {
 
   .redes i:hover {
     color: rgb(189, 189, 189);
-    transform: scale(1.20);
+    transform: scale(1.2);
     transition: all 1s;
   }
 
@@ -458,4 +464,4 @@ footer {
 }
 /*fin footer*/
 
-@import 'media'
+@import "media";
