@@ -80,51 +80,50 @@ $border-color: rgb(212, 212, 195);
 .cont-inicio {
   @include sizes(auto, 100%, $bg-color1);
   display: flex;
-}
 
-.left {
-  @include sizes(100vh, 50%, none);
-  background-image: url(images/fotocamara.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-}
+  .left {
+    @include sizes(auto, 50%, none);
+    background-image: url(images/fotocamara.png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+  }
 
-.right {
-  @include sizes(auto, 50%, $bg-color1);
-}
+  .right {
+    @include sizes(auto, 50%, $bg-color1);
 
-.call {
-  max-width: 90%;
-  padding: 40px;
-  margin: auto;
-  margin-top: 55px;
-  border: 5px solid $border-color;
-  background-color: $bg-color1;
-  @extend .hola;
-}
+    .call {
+      max-width: 90%;
+      padding: 30px;
+      margin: auto;
+      margin-top: 20%;
+      margin-bottom: 20%;
+      border: 5px solid $border-color;
+      background-color: $bg-color1;
+      @extend .hola;
+    }
 
-.hola {
-  color: $color-font;
-  font-family: $font1;
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
-  background-color: $bg-color1;
-}
+    .hola {
+      color: $color-font;
+      font-family: $font1;
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      background-color: $bg-color1;
+    }
 
-.call p {
-  color: $color-font;
-  font-family: $font1;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: $bg-color1;
-  border: none;
+    p {
+      color: $color-font;
+      font-family: $font1;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      background-color: $bg-color1;
+      border: none;
+    }
+  }
 }
-
 /*fin de inicio*/
 
 /*inicio de sobre mí*/
@@ -254,64 +253,76 @@ $border-color: rgb(212, 212, 195);
 .cont-form {
   @include sizes(auto, 100%, $bg-color1);
   display: flex;
-}
 
-.formulario {
-  @include sizes(95%, 60%, $bg-color2);
-  display: block;
-  color: $color-font;
-  font-size: 20px;
-  padding: 40px;
-  margin: auto;
-  margin-top: 16px;
-  border: 3px solid rgb(212, 212, 195);
-}
+  .form-left {
+    @include sizes(auto, 50%, $bg-color1);
 
-.form-left {
-  @include sizes(auto, 50%, $bg-color1);
-}
+    .cajacontacto {
+      @include sizes(auto, 80%, $bg-color1);
+      color: $color-font;
+      text-align: center;
+      font-size: 25px;
+      padding: 40px;
+      margin: auto;
+      margin-top: 80px;
+      margin-left: 100px;
+      margin-bottom: 80px;
 
-.cajacontacto {
-  @include sizes(auto, 80%, $bg-color1);
-  color: $color-font;
-  text-align: center;
-  font-size: 25px;
-  padding: 40px;
-  margin: auto;
-  margin-top: 80px;
-  margin-left: 100px;
-  margin-bottom: 80px;
-}
+      p {
+        color: $color-font;
+        font-family: $font1;
+        font-weight: bold;
+        background-color: $bg-color1;
+        border: solid 3px rgb(212, 212, 195);
+        padding: 30px;
+      }
+    }
+  }
 
-p {
-  color: $color-font;
-  font-family: $font1;
-  font-weight: bold;
-  background-color: $bg-color1;
-  border: solid 3px rgb(212, 212, 195);
-  padding: 30px;
-}
+  .form-right {
+    @include sizes(auto, 50%, bg-color1);
 
-.form-right {
-  @include sizes(auto, 50%, bg-color1);
-}
+    .formulario {
+      @include sizes(95%, 60%, $bg-color2);
+      display: block;
+      color: $color-font;
+      font-size: 20px;
+      padding: 40px;
+      margin: auto;
+      margin-top: 16px;
+      border: 3px solid rgb(212, 212, 195);
 
-label {
-  font-family: $font1;
-}
+      label {
+        font-family: $font1;
+      }
 
-input {
-  padding: 6px;
-  width: 100%;
-  font-family: $font1;
-  border: none;
-  border-bottom: 2px solid rgb(204, 204, 181);
-  background: transparent;
-}
+      input {
+        padding: 6px;
+        width: 100%;
+        font-family: $font1;
+        border: none;
+        border-bottom: 2px solid rgb(204, 204, 181);
+        background: transparent;
+      }
 
-input:focus {
-  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-  outline: none;
+      textarea {
+        width: 98%;
+        background-color: $bg-color1;
+        max-height: 100px;
+        resize: none;
+        border: 2px solid rgb(204, 204, 181);
+      }
+
+      .enviar {
+        font-size: 15px;
+        font-family: $font1;
+        background-color: $bg-color1;
+        padding: 5px;
+        border: 2px solid rgb(202, 193, 193);
+        margin-left: 80%;
+      }
+    }
+  }
 }
 
 input::placeholder {
@@ -320,32 +331,8 @@ input::placeholder {
   font-size: 20px;
 }
 
-textarea {
-  width: 98%;
-  background-color: $bg-color1;
-  max-height: 100px;
-  resize: none;
-  border: 2px solid rgb(204, 204, 181);
-}
-
-textarea:focus {
-  background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
-  outline: none;
-}
-
 textarea::placeholder {
-  font-family: $font1;
-  color: rgb(123, 121, 121);
-  font-size: 20px;
-}
-
-.enviar {
-  font-size: 15px;
-  font-family: $font1;
-  background-color: $bg-color1;
-  padding: 5px;
-  border: 2px solid rgb(202, 193, 193);
-  margin-left: 80%;
+  @extend input::placeholder;
 }
 
 .enviar:hover {
@@ -407,7 +394,10 @@ textarea::placeholder {
       transition: all 2.5s;
     }
 
-    .caja2,
+    .caja2{
+      @extend .caja1;
+    }
+
     .caja3 {
       @extend .caja1;
     }
@@ -427,7 +417,6 @@ textarea::placeholder {
     }
   }
 }
-
 /*Fin de mi contacto */
 
 /*inicio footer*/

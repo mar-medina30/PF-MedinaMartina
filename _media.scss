@@ -1,75 +1,45 @@
 @media only screen and (min-width: 320px) and (max-width: 990px) {
   .logo {
     width: 80%;
-  }
 
-  .logo strong {
-    width: 70%;
-    font-size: 20px;
-    margin-left: 10px;
+    strong {
+      width: 70%;
+      font-size: 20px;
+      margin-left: 10px;
+    }
   }
 
   .sec {
     font-size: 16px;
   }
 
-  .nav-link {
-    font-size: 14px;
-    margin-left: 34%;
-  }
-
-  .left {
-    width: 100%;
-  }
-  .right {
-    width: 100%;
-  }
   .cont-inicio {
     display: inline-block;
-  }
 
-  .call {
-    margin-bottom: 15%;
-    width: 100%;
-    padding: 10px;
-  }
+    .left {
+      height: 100vh;
+      width: 100%;
+    }
 
-  .hola {
-    font-size: 20px;
-  }
+    .right {
+      width: 100%;
 
-  .right p {
-    font-size: 15px;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 990px) {
-  .call {
-    max-width: 80%;
-    padding: 10px;
-    margin-top: 10%;
-  }
-  .call .hola {
-    font-size: 20px;
-  }
-  .call p {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (min-width: 990px) and (max-width: 1350px) {
-  .call {
-    width: 90%;
-    padding: 15px;
-    margin-top: 50px;
-  }
-
-  .call .hola {
-    font-size: 25px;
-  }
-  .call p {
-    font-size: 20px;
+      .call {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 80%;
+        padding: 10px;
+      }
+    
+      .hola {
+        font-size: 20px;
+      }
+    
+      p {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -116,23 +86,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
 
-  .form-left,
-  .form-right {
-    width: 100%;
-    height: 50%;
-  }
+    .form-left{
+      width: 100%;
+      height: 50%;
 
-  .cajacontacto {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 20px;
-  }
+      .cajacontacto {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+      }
+    }
 
-  .formulario {
-    margin-top: 0;
-    margin-bottom: 40px;
+    .form-right {
+      width: 100%;
+      height: 50%;
+
+      .formulario {
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
+    }
   }
 }
 
@@ -141,37 +115,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
 
-  .form-left,
-  .form-right {
-    width: 100%;
-    height: 50%;
-  }
+    .form-left{
+      width: 100%;
+      height: 50%;
 
-  .cajacontacto {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
+      .cajacontacto {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
 
-  .cajacontacto p {
-    font-size: 15px;
-  }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
 
-  .formulario {
-    width: 90%;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
+    .form-right {
+      width: 100%;
+      height: 50%;
 
-  input {
-    width: 90%;
-    margin-left: 10px;
-  }
+      .formulario {
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 10px;
 
-  textarea {
-    width: 100%;
+        input {
+          width: 90%;
+          margin-left: 10px;
+        }
+      
+        textarea {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -180,5 +158,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 990px){
+  footer{
+    height: 150px;
+
+    .redes i {
+      font-size: 30px;
+      letter-spacing: 10px;
+    }
+
+    .copy{
+      font-size: 15px;
+    }
   }
 }

@@ -10,14 +10,7 @@
 
 /*inicio de header*/
 .navbar {
-  background-image: linear-gradient(
-    to bottom,
-    #dcdcba,
-    #e2e2c6,
-    #e8e8d2,
-    #eeeede,
-    #f4f4ea
-  );
+  background-image: linear-gradient(to bottom, #dcdcba, #e2e2c6, #e8e8d2, #eeeede, #f4f4ea);
   display: flex;
   justify-content: space-evenly;
 }
@@ -66,50 +59,45 @@
   background-color: rgb(227, 227, 209);
   display: flex;
 }
-
-.left {
-  height: 100vh;
+.cont-inicio .left {
+  height: auto;
   width: 50%;
   background-color: rgb(227, 227, 209);
   background-image: url(images/fotocamara.png);
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   background-position: center;
   opacity: 0.6;
 }
-
-.right {
+.cont-inicio .right {
   height: auto;
   width: 50%;
   background-color: rgb(227, 227, 209);
 }
-
-.call {
+.cont-inicio .right .call {
   max-width: 90%;
-  padding: 40px;
+  padding: 30px;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 20%;
+  margin-bottom: 20%;
   border: 5px solid rgb(212, 212, 195);
   background-color: rgb(227, 227, 209);
 }
-
-.hola,
-.call {
+.cont-inicio .right .hola, .cont-inicio .right .call {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
   background-color: rgb(227, 227, 209);
 }
-
-.call p {
+.cont-inicio .right p {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: rgb(227, 227, 209);
   border: none;
 }
@@ -226,27 +214,12 @@
   background-color: rgb(227, 227, 209);
   display: flex;
 }
-
-.formulario {
-  height: 95%;
-  width: 60%;
-  background-color: rgb(227, 227, 209);
-  display: block;
-  color: rgb(92, 92, 92);
-  font-size: 20px;
-  padding: 40px;
-  margin: auto;
-  margin-top: 16px;
-  border: 3px solid rgb(212, 212, 195);
-}
-
-.form-left {
+.cont-form .form-left {
   height: auto;
   width: 50%;
   background-color: rgb(227, 227, 209);
 }
-
-.cajacontacto {
+.cont-form .form-left .cajacontacto {
   height: auto;
   width: 80%;
   background-color: rgb(227, 227, 209);
@@ -259,8 +232,7 @@
   margin-left: 100px;
   margin-bottom: 80px;
 }
-
-p {
+.cont-form .form-left .cajacontacto p {
   color: rgb(92, 92, 92);
   font-family: "Josefin Slab", serif;
   font-weight: bold;
@@ -268,24 +240,48 @@ p {
   border: solid 3px rgb(212, 212, 195);
   padding: 30px;
 }
-
-.form-right {
+.cont-form .form-right {
   height: auto;
   width: 50%;
   background-color: rgb(227, 227, 209);
 }
-
-label {
+.cont-form .form-right .formulario {
+  height: 95%;
+  width: 60%;
+  background-color: rgb(227, 227, 209);
+  display: block;
+  color: rgb(92, 92, 92);
+  font-size: 20px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 16px;
+  border: 3px solid rgb(212, 212, 195);
+}
+.cont-form .form-right .formulario label {
   font-family: "Josefin Slab", serif;
 }
-
-input {
+.cont-form .form-right .formulario input {
   padding: 6px;
   width: 100%;
   font-family: "Josefin Slab", serif;
   border: none;
   border-bottom: 2px solid rgb(204, 204, 181);
   background: transparent;
+}
+.cont-form .form-right .formulario textarea {
+  width: 98%;
+  background-color: rgb(227, 227, 209);
+  max-height: 100px;
+  resize: none;
+  border: 2px solid rgb(204, 204, 181);
+}
+.cont-form .form-right .formulario .enviar {
+  font-size: 15px;
+  font-family: "Josefin Slab", serif;
+  background-color: rgb(227, 227, 209);
+  padding: 5px;
+  border: 2px solid rgb(202, 193, 193);
+  margin-left: 80%;
 }
 
 input:focus {
@@ -305,14 +301,6 @@ input::placeholder {
   font-size: 20px;
 }
 
-textarea {
-  width: 98%;
-  background-color: rgb(227, 227, 209);
-  max-height: 100px;
-  resize: none;
-  border: 2px solid rgb(204, 204, 181);
-}
-
 textarea:focus {
   background: linear-gradient(to bottom, transparent, rgb(220, 220, 193));
   outline: none;
@@ -328,15 +316,6 @@ textarea::placeholder {
   font-family: "Josefin Slab", serif;
   color: rgb(123, 121, 121);
   font-size: 20px;
-}
-
-.enviar {
-  font-size: 15px;
-  font-family: "Josefin Slab", serif;
-  background-color: rgb(227, 227, 209);
-  padding: 5px;
-  border: 2px solid rgb(202, 193, 193);
-  margin-left: 80%;
 }
 
 .enviar:hover {
@@ -385,16 +364,14 @@ textarea::placeholder {
   background-color: rgb(227, 227, 209);
   margin-top: 5%;
 }
-.cont-micontacto .cajas .caja1,
-.cont-micontacto .cajas .caja2,
+.cont-micontacto .cajas .caja1, .cont-micontacto .cajas .caja2,
 .cont-micontacto .cajas .caja3 {
   width: 180px;
   height: 180px;
   padding: 20px;
   border: 3px solid rgb(212, 212, 195);
 }
-.cont-micontacto .cajas .caja1:hover,
-.cont-micontacto .cajas .caja2:hover,
+.cont-micontacto .cajas .caja1:hover, .cont-micontacto .cajas .caja2:hover,
 .cont-micontacto .cajas .caja3:hover {
   transform: scale(1.2);
   transition: all 2.5s;
@@ -415,14 +392,7 @@ textarea::placeholder {
 /*Fin de mi contacto */
 /*inicio footer*/
 footer {
-  background-image: linear-gradient(
-    to top,
-    #c2c2ac,
-    #cecebb,
-    #dbdbcb,
-    #e7e7da,
-    #f4f4ea
-  );
+  background-image: linear-gradient(to top, #c2c2ac, #cecebb, #dbdbcb, #e7e7da, #f4f4ea);
   font-size: 40px;
   text-align: center;
   padding: 20px;
@@ -460,55 +430,28 @@ footer .copy {
     font-size: 14px;
     margin-left: 34%;
   }
-  .left {
-    width: 100%;
-  }
-  .right {
-    width: 100%;
-  }
   .cont-inicio {
     display: inline-block;
   }
-  .call {
-    margin-bottom: 15%;
+  .cont-inicio .left {
+    height: 100vh;
     width: 100%;
+  }
+  .cont-inicio .right {
+    width: 100%;
+  }
+  .cont-inicio .right .call {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
     padding: 10px;
   }
-  .hola,
-  .call {
+  .cont-inicio .right .hola, .cont-inicio .right .call {
     font-size: 20px;
   }
-  .right p {
+  .cont-inicio .right p {
     font-size: 15px;
     text-align: center;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 990px) {
-  .call {
-    max-width: 80%;
-    padding: 10px;
-    margin-top: 10%;
-  }
-  .call .hola,
-  .call .call {
-    font-size: 20px;
-  }
-  .call p {
-    font-size: 15px;
-  }
-}
-@media only screen and (min-width: 990px) and (max-width: 1350px) {
-  .call {
-    width: 90%;
-    padding: 15px;
-    margin-top: 50px;
-  }
-  .call .hola,
-  .call .call {
-    font-size: 25px;
-  }
-  .call p {
-    font-size: 20px;
   }
 }
 @media only screen and (min-width: 390px) and (max-width: 660px) {
@@ -538,17 +481,20 @@ footer .copy {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .form-left,
-  .form-right {
+  .cont-form .form-left {
     width: 100%;
     height: 50%;
   }
-  .cajacontacto {
+  .cont-form .form-left .cajacontacto {
     width: 80%;
     margin-left: 10%;
     margin-top: 20px;
   }
-  .formulario {
+  .cont-form .form-right {
+    width: 100%;
+    height: 50%;
+  }
+  .cont-form .form-right .formulario {
     margin-top: 0;
     margin-bottom: 40px;
   }
@@ -559,29 +505,32 @@ footer .copy {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .form-left,
-  .form-right {
+  .cont-form .form-left {
     width: 100%;
     height: 50%;
   }
-  .cajacontacto {
+  .cont-form .form-left .cajacontacto {
     width: 100%;
     margin-left: 0;
     margin-bottom: 10px;
   }
-  .cajacontacto p {
+  .cont-form .form-left .cajacontacto p {
     font-size: 15px;
   }
-  .formulario {
+  .cont-form .form-right {
+    width: 100%;
+    height: 50%;
+  }
+  .cont-form .form-right .formulario {
     width: 90%;
     margin-bottom: 10px;
     padding: 10px;
   }
-  input {
+  .cont-form .form-right .formulario input {
     width: 90%;
     margin-left: 10px;
   }
-  textarea {
+  .cont-form .form-right .formulario textarea {
     width: 100%;
   }
 }
@@ -592,3 +541,15 @@ footer .copy {
     align-items: center;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 990px) {
+  footer {
+    height: 150px;
+  }
+  footer .redes i {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  footer .copy {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=estilo.css.map */
